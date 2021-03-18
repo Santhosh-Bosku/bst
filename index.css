@@ -1,0 +1,341 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html
+{
+    width: 100%;
+    height: 10vh;
+}
+body
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav
+{
+    display: flex;
+}
+
+[id^="in"]
+{
+    display: none;
+}
+
+#profile-checkbox
+{
+    display: none;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+
+    header
+    {
+        width: 100%;
+        height: 8vh;
+    }
+
+    nav
+    {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #profile-img
+    {
+        height: 7.5vh;
+        width: 10%;
+        margin-right: 1%;
+        z-index: 999;
+    }
+
+    #profile-img label
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        margin: auto 0;
+    }
+
+    #profile-img label img
+    {
+        border-radius: 50%;
+    }
+
+    #burger
+    {
+        width: 15vw;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #burger [id^="li"]
+    {
+        width: 50%;
+        height: 5px;
+        font-size: 20px;
+        background-color: rgb(0, 0, 0);
+        margin: 3px 0 0 0;
+        border-radius: 25px;
+        z-index: 999;
+    }
+
+    #burger #li-one
+    {
+        margin: 0;
+    }
+
+    #menu
+    {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: #ccc;
+        transform: translateX(-100%);
+        transition: 0.1s linear;
+        z-index: 998;
+    }
+    #burger-checkbox:checked~ header #menu
+    {
+        transform: translateX(0%);
+        transition: 0.1s linear;
+    }
+
+    #profile
+    {
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        transform: translateY(-100%);
+        transition: 0.1s linear;
+        z-index: 996;
+        overflow: hidden;
+        /* display: none; */
+    }
+
+    #profile-checkbox:checked ~ header #profile
+    {
+        transform: translateY(0%);
+        transition: 0.1s linear;
+    }
+
+    footer
+    {
+        width: 100%;
+        height: 8vh;
+        background-color: rgb(0, 0, 0);
+        position: absolute;
+        bottom: 0;
+        z-index: 997;
+    }
+    
+    #ft-menu
+    {
+        display: flex;
+        align-items: center;
+        padding: 0.2vh 0 0 0;
+        justify-content: space-around;
+
+    }
+
+    #ft-menu .icon
+    {
+        width: 18%;
+        height: 7vh;
+        margin: 3px 0 0 0;
+        /* background-color: black;  */
+    }
+    
+    #container
+    {
+        width: 100%;
+        height: 84vh;
+        margin: 0 0 8vh 0;
+        /* background-color: ; */
+    }
+
+    .icon a
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon label img
+    {
+        height: 80%;
+        width: 40%;
+    }
+
+    .icon label img:hover
+    {
+        fill: white;
+        text-shadow:0 0 10px  rgb(0, 0, 0);
+    }
+
+    #timeline
+    {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    #timeline #timeline-container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #timeline #timeline-container .post
+    {
+        width: 100%;
+        height: 80%;
+        margin: 2px 0 0 0;
+    }
+
+    #timeline #timeline-container .post .post-container
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    #timeline-container .post .post-container .post-header
+    {
+        width: 100%;
+        height: 12%;
+        background-color: rgb(107, 107, 107);
+    }
+
+    #timeline-container .post .post-container .post-body .img img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #timeline-container .post .post-container .post-body
+    {
+        width: 100%;
+        height: 76%;
+        position: relative;
+    }
+    
+    #timeline-container .post .post-container .post-body .img
+    {  
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+    #timeline-container .post .post-container .post-body .details
+    {  
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        color: white;
+        transition: 0.2s linear;
+    }
+
+    #timeline-container .post .post-container .post-body .details h1,p
+    {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    #timeline-container .post .post-container .post-body .details h1
+    {
+        font-size: 20px;
+        /* margin-top: 6px; */
+    }
+
+    #timeline-container .post .post-container .post-body .details p
+    {
+        font-size: 12px;
+        /* margin-top: 3px; */
+    }
+
+    #timeline-container .post .post-container .post-footer
+    {
+        width: 100%;
+        height: 12%;
+        background-color: rgb(107, 107, 107);
+    }
+
+    #timeline-container .post .post-container .post-header ul
+    {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-profile-img
+    {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-user-name
+    {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-profile-img img
+    {
+        width: 70%;
+        border-radius: 50%;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-user-name p
+    {
+        width: 100%;
+        color: white;
+    }
+
+
+    #in1:checked ~ #timeline-container .post .post-container .post-body .details
+    {
+        height: 100%;
+        overflow-y: scroll;
+        transition: 0.2s linear;
+    }
+    #in2:checked ~ #timeline-container .post .post-container .post-body .details
+    {
+        height: 100%;
+        overflow-y: scroll;
+        transition: 0.2s linear;
+    }
+    #in3:checked ~ #timeline-container .post .post-container .post-body .details
+    {
+        height: 100%;
+        overflow-y: scroll;
+        transition: 0.2s linear;
+    }
+}
