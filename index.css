@@ -302,6 +302,15 @@ nav
         height: 100%;
     }
 
+    #timeline-container .post .post-container .post-footer ul li label
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
     #timeline-container .post .post-container .post-footer ul li img
     {
         width: 15%;
@@ -310,7 +319,7 @@ nav
 
     #in-comment:checked ~ #comment-box
     {
-        height: 8vh;
+        height: auto;
         display: block;
         transition: height 0.2s ease-in-out;
     }
@@ -321,6 +330,14 @@ nav
         height: 0;
         display: none;
         transition: all 0.2s ease-in-out;
+    }
+
+    #comment-box p
+    {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        color: #777;
     }
 
     #comment-box ul
@@ -351,18 +368,17 @@ nav
     {
         display: inline-block;
         width: 100%;
-        height: 40px;
+        height: 30px;
         resize: none;
-        margin-top: 5px;
-        margin-left: 2px;
+        margin: 5px 0 5px 10px;
     }
 
     #comment-box ul li  button
     {
         display: inline-block;
         width: 50%;
-        height: 5vh;
-        margin: 10px 0 0 0;
+        height: 4vh;
+        margin: 8px 0 0 0;
     }
 
     li#comment
