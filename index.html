@@ -35,7 +35,21 @@
             </ul>
         </div>
         <div id="profile">
-
+            <div class="row" id="profile-img-upload">
+                <input type="file" name="profile-img" id="in-profile-img-upload">
+                <label for="in-profile-img-upload">
+                    <img src="images/icons/user.svg" alt="profile-img">
+                </label>                
+            </div>
+            <div class="row" id="profile-details">
+                <fieldset><legend>Name</legend><p>Santhosh Bosku</p></fieldset>
+                <fieldset><legend>DOB</legend><p>18-10-1998</p></fieldset>
+                <fieldset><legend>Mail-ID</legend><p>santhoshbablubosku@gmail.com</p></fieldset>
+                <fieldset><legend>Contact-Number</legend><p>1234567890</p></fieldset>
+                <button>
+                    Edit Profile
+                </button>
+            </div>
         </div>
         <nav>
             <label id="burger" for="burger-checkbox">
@@ -45,7 +59,8 @@
             </label>
             <div id="profile-img">
                 <label for="profile-checkbox">
-                    <img src="images/icons/user.svg" alt="image">
+                    <img src="images/icons/user.svg" alt="image" id="open">
+                    <img src="images/icons/close.svg" alt="close" id="close">
                 </label>
             </div>
         </nav>
