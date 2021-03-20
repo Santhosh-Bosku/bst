@@ -108,7 +108,91 @@ nav
         transform: translateX(-100%);
         transition: 0.1s linear;
         z-index: 998;
+        overflow-y: scroll;
     }
+
+
+    #menu ul#fst
+    {
+        width: 100%;
+        height: auto;
+        margin: 8vh 0 0 0;
+        list-style: none;
+    }
+
+    #menu ul ul#sec
+    {
+        height: 0px;
+        visibility: hidden;
+        display: none;
+        transition:all 0.3s ease-in-out;
+    }
+
+    #in-quiz-op:checked ~ #fst #sec
+    {
+        height: auto;
+        visibility: visible;
+        display: block;
+        transition: all 0.3s linear;
+    }
+
+    #menu ul li label img
+    {
+        width: 10%; height: 30%;
+        transition: all 0.3s ease-in-out;
+
+    }
+
+    #in-quiz-op:checked ~ #fst li label img
+    {
+        transform: rotate(90deg);
+        /* background-color: red; */
+        transition: all 0.3s ease-in-out;
+    }
+    
+    #menu ul #sec li a
+    {
+        width: 100%;
+        height: 7vh;
+        text-indent: 40px;
+        background-color: #ccc;
+        border-bottom: 0.5px solid rgb(255, 255, 255);
+    }
+    
+    #menu ul#fst li
+    {
+        width: 100%;
+        height: 7vh;
+        background-color: white;
+        border-bottom: 0.5px solid #ccc;
+    }
+
+    #menu ul li a
+    {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-indent: 20px;
+        font-weight: 600;
+
+    }
+
+    #menu ul li label
+    {
+        width: 100%;
+        height: 7vh !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        text-indent: 20px;
+        font-weight: 600;
+    }
+   
     #burger-checkbox:checked~ header #menu
     {
         transform: translateX(0%);
