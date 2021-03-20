@@ -1,8 +1,8 @@
 window.onscroll = function(){
     var top = window.scrollY;
     if(top >= 10){
-        document.documentElement.requestFullscreen()
+        document.body.requestFullscreen()
     }else{
-        document.documentElement.webkitExitFullscrenn()
+        document.body.webkitExitFullscrenn()
     }
 }
