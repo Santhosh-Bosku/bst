@@ -12,7 +12,7 @@ header h1, a
 
 #container
 {
-    background-color: white;
+    background-color: #f1ad5b;
 }
 
 #login-form
@@ -20,7 +20,7 @@ header h1, a
     width: 100%;
     height: 92vh;
     margin-top: 8vh;
-    background-image: url("images/login-background.jpg");
+    background-image: url("images/signup-background.jpg");
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: right;
@@ -58,7 +58,7 @@ header h1, a
     display: block;
     height: 5vh;
     width: 20vw;
-    margin: 5vh 0;
+    margin: 3vh 0;
     font-size: 1vw;
     outline: none;
     text-indent: 1vw;
