@@ -1,0 +1,294 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #timeline
+    {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+    }
+
+    #timeline #timeline-container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #timeline #timeline-container .post
+    {
+        width: 100%;
+        height: auto;
+        margin: 2px 0 0 0;
+    }
+
+    #timeline #timeline-container .post .post-container
+    {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    #timeline-container .post .post-container .post-header
+    {
+        width: 100%;
+        height: 8vh;
+        background-color: #ccc;
+    }
+
+    #timeline-container .post .post-container .post-body .img img
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #timeline-container .post .post-container .post-body
+    {
+        width: 100%;
+        height: 55vh;
+        position: relative;
+    }
+    
+    #timeline-container .post .post-container .post-body .img
+    {  
+        width: 100%;
+        height: 100%;
+        background-color: red;
+    }
+
+    #timeline-container .post .post-container .post-body .details
+    {  
+        width: 100%;
+        height: 15%;
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        color: white;
+        transition: 0.2s linear;
+    }
+
+    #timeline-container .post .post-container .post-body .details label
+    {
+        display: block;
+        width: 100%;
+        height: 326px;
+    }
+
+    #timeline-container .post .post-container .post-body .details h1,p
+    {
+        width: 95%;
+        margin: 0 auto 0 auto;
+    }
+
+    #timeline-container .post .post-container .post-body .details h1
+    {
+        font-size: 20px;
+        /* margin-top: 6px; */
+    }
+
+    #timeline-container .post .post-container .post-body .details p
+    {
+        font-size: 12px;
+        /* margin-top: 3px; */
+    }
+
+    #timeline-container .post .post-container .post-footer
+    {
+        width: 100%;
+        height: 8vh;
+        background-color: #ccc;
+        position: relative;
+        transition: all 0.1s ease-in-out;
+    }
+
+    #timeline-container .post .post-container .post-footer ul 
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        position: sticky;
+        top: 0;
+    }
+
+    #timeline-container .post .post-container .post-footer ul li
+    {
+
+        width: 50%;
+        height: 100%;
+    }
+
+    #timeline-container .post .post-container .post-footer ul li label
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #timeline-container .post .post-container .post-footer ul li img
+    {
+        width: 15%;
+        height: 80%;
+    }
+
+    #in-comment:checked ~ .post-footer
+    {
+        padding: 0 0 25vh 0;
+        background-color: red;
+        overflow-y: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    
+
+    #comment-box
+    {
+        width: 100%;
+        height: 0;
+        display: none;
+        transition: all 0.2s ease-in-out;
+        background-color: white;
+    }
+
+    #in-comment:checked ~ .post-footer #comment-box
+    {
+        height: 25vh;
+        display: block;
+        transition: height 0.2s ease-in-out;
+    }
+
+    #comment-box #comments
+    {
+        height: 19vh;
+        overflow-y: scroll;
+    }
+
+    #comment-box #comments p
+    {
+        width: 89%;
+        margin: 0 auto;
+        font-size: 0.8rem;
+        color: #777;
+    }
+
+    #comment-box ul
+    {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    #comment-box ul li
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #comment-box ul #comment-textarea
+    {
+        width: 60%;
+        margin-left: 10px;
+    }
+
+    #comment-box ul #comment-button
+    {
+        width: 40%;
+    }
+
+    #comment-box ul li textarea
+    {
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        resize: none;
+        margin: 5px 0 5px 10px;
+    }
+
+    #comment-box ul li  button
+    {
+        display: inline-block;
+        width: 50%;
+        height: 4vh;
+        margin: 8px 0 0 0;
+    }
+
+    li#comment
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 3%;
+    }
+    li#share
+    {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 3%;
+    }
+
+    #timeline-container .post .post-container .post-header ul
+    {
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-profile-img
+    {
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-user-name
+    {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-profile-img img
+    {
+        width: 70%;
+        border-radius: 50%;
+    }
+
+    #timeline-container .post .post-container .post-header ul #post-user-name p
+    {
+        width: 100%;
+        color: white;
+    }
+
+
+    #in1:checked ~ #timeline-container .post .post-container .post-body .details
+    {
+        height: 100%;
+        overflow-y: scroll;
+        transition: 0.2s linear;
+    }
+    #in2:checked ~ #timeline-container .post .post-container .post-body .details
+    {
+        height: 100%;
+        overflow-y: scroll;
+        transition: 0.2s linear;
+    }
+    #in3:checked ~ #timeline-container .post .post-container .post-body .details
+    {
+        height: 100%;
+        overflow-y: scroll;
+        transition: 0.2s linear;
+    }
+}

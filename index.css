@@ -1,294 +1,129 @@
-*
+#tagline
 {
-    margin: 0;
-    padding: 0;
+    color: white;
 }
+
+#tagline h1
+{
+    font-size: 4rem;
+    padding: 33vh 0 0 15vw;
+}
+
+#tagline button
+{
+    margin: 5vh 0 0 26vw;
+    width: 10vw;
+    height: 6vh;
+    /* border-radius: 15%; */
+    border: none;
+}
+
+footer
+{
+    width: 100%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+footer #dear-beliver
+{
+    width: 86%;
+    text-align: center;
+    margin: 20vh auto 0 auto;
+}
+
+footer #dear-beliver h1
+{
+    font-size: 2vw;
+    margin-bottom: 3vh;
+}
+
+footer #dear-beliver p
+{
+    font-size: 1vw;
+    font-weight: 500;
+    word-spacing: 0.5px;
+    line-height: 2vw;
+}
+
+footer #dear-beliver .four
+{
+    font-size: 1.2vw;
+    margin-top: 5vh;
+    font-weight: 600;
+}
+
+footer #dear-beliver .five
+{
+    font-size: 1.5vw;
+}
+
+
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
-    #timeline
+    div#container
     {
-        width: 100%;
-        height: 100%;
-        overflow-y: scroll;
+        /* background-image: url("images/remi-thorel-DgUD5P1a2Hc-unsplash.jpg"); */
     }
 
-    #timeline #timeline-container
+    #tagline h1
     {
-        width: 100%;
-        height: 100%;
-    }
-
-    #timeline #timeline-container .post
-    {
-        width: 100%;
-        height: auto;
-        margin: 2px 0 0 0;
-    }
-
-    #timeline #timeline-container .post .post-container
-    {
-        width: 100%;
-        height: auto;
+        font-size: 10vw;
+        padding: 40vh 0 0 0;
+        text-align: center;
         margin: 0 auto;
+        width: 90%;
+        /* color: black; */
     }
 
-    #timeline-container .post .post-container .post-header
+    #tagline button
     {
-        width: 100%;
-        height: 8vh;
-        background-color: #ccc;
+        width: 30vw;
+        margin: 4vh 0 0 36vw;
+        padding: 0;
     }
 
-    #timeline-container .post .post-container .post-body .img img
+    #scroll
     {
-        width: 100%;
-        height: 100%;
+        font-size: 10vw;
     }
 
-    #timeline-container .post .post-container .post-body
+    footer
     {
-        width: 100%;
-        height: 55vh;
-        position: relative;
-    }
-    
-    #timeline-container .post .post-container .post-body .img
-    {  
-        width: 100%;
-        height: 100%;
-        background-color: red;
+      justify-content: center;
     }
 
-    #timeline-container .post .post-container .post-body .details
-    {  
-        width: 100%;
-        height: 15%;
-        position: absolute;
-        bottom: 0px;
-        background-color: rgba(0, 0, 0, 0.5);
-        overflow: hidden;
-        color: white;
-        transition: 0.2s linear;
-    }
-
-    #timeline-container .post .post-container .post-body .details label
+    footer #dear-beliver
     {
-        display: block;
-        width: 100%;
-        height: 326px;
+        text-align: start;
+        margin: 0 0 0 0;
     }
 
-    #timeline-container .post .post-container .post-body .details h1,p
+    footer #dear-beliver h1
     {
-        width: 95%;
-        margin: 0 auto 0 auto;
+        font-size: 5vw;
     }
 
-    #timeline-container .post .post-container .post-body .details h1
+    footer #dear-beliver p
     {
-        font-size: 20px;
-        /* margin-top: 6px; */
+        line-height: 8vw;
+        font-size: 3vw;
+        text-align: justify;
     }
 
-    #timeline-container .post .post-container .post-body .details p
+    footer #dear-beliver .four
     {
-        font-size: 12px;
-        /* margin-top: 3px; */
+        font-size: 3vw;
     }
 
-    #timeline-container .post .post-container .post-footer
+    footer #dear-beliver .five
     {
-        width: 100%;
-        height: 8vh;
-        background-color: #ccc;
-        position: relative;
-        transition: all 0.1s ease-in-out;
+        font-size: 4vw;
     }
 
-    #timeline-container .post .post-container .post-footer ul 
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        position: sticky;
-        top: 0;
-    }
-
-    #timeline-container .post .post-container .post-footer ul li
-    {
-
-        width: 50%;
-        height: 100%;
-    }
-
-    #timeline-container .post .post-container .post-footer ul li label
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    #timeline-container .post .post-container .post-footer ul li img
-    {
-        width: 15%;
-        height: 80%;
-    }
-
-    #in-comment:checked ~ .post-footer
-    {
-        padding: 0 0 25vh 0;
-        background-color: red;
-        overflow-y: hidden;
-        transition: all 0.3s ease-in-out;
-    }
-
-    
-
-    #comment-box
-    {
-        width: 100%;
-        height: 0;
-        display: none;
-        transition: all 0.2s ease-in-out;
-        background-color: white;
-    }
-
-    #in-comment:checked ~ .post-footer #comment-box
-    {
-        height: 25vh;
-        display: block;
-        transition: height 0.2s ease-in-out;
-    }
-
-    #comment-box #comments
-    {
-        height: 19vh;
-        overflow-y: scroll;
-    }
-
-    #comment-box #comments p
-    {
-        width: 89%;
-        margin: 0 auto;
-        font-size: 0.8rem;
-        color: #777;
-    }
-
-    #comment-box ul
-    {
-        list-style: none;
-        width: 100%;
-        height: 100%;
-    }
-
-    #comment-box ul li
-    {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #comment-box ul #comment-textarea
-    {
-        width: 60%;
-        margin-left: 10px;
-    }
-
-    #comment-box ul #comment-button
-    {
-        width: 40%;
-    }
-
-    #comment-box ul li textarea
-    {
-        display: inline-block;
-        width: 100%;
-        height: 30px;
-        resize: none;
-        margin: 5px 0 5px 10px;
-    }
-
-    #comment-box ul li  button
-    {
-        display: inline-block;
-        width: 50%;
-        height: 4vh;
-        margin: 8px 0 0 0;
-    }
-
-    li#comment
-    {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin-left: 3%;
-    }
-    li#share
-    {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 3%;
-    }
-
-    #timeline-container .post .post-container .post-header ul
-    {
-        height: 100%;
-        display: flex;
-        justify-content: flex-start;
-        list-style: none;
-    }
-
-    #timeline-container .post .post-container .post-header ul #post-profile-img
-    {
-        width: 15%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #timeline-container .post .post-container .post-header ul #post-user-name
-    {
-        width: 70%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #timeline-container .post .post-container .post-header ul #post-profile-img img
-    {
-        width: 70%;
-        border-radius: 50%;
-    }
-
-    #timeline-container .post .post-container .post-header ul #post-user-name p
-    {
-        width: 100%;
-        color: white;
-    }
-
-
-    #in1:checked ~ #timeline-container .post .post-container .post-body .details
-    {
-        height: 100%;
-        overflow-y: scroll;
-        transition: 0.2s linear;
-    }
-    #in2:checked ~ #timeline-container .post .post-container .post-body .details
-    {
-        height: 100%;
-        overflow-y: scroll;
-        transition: 0.2s linear;
-    }
-    #in3:checked ~ #timeline-container .post .post-container .post-body .details
-    {
-        height: 100%;
-        overflow-y: scroll;
-        transition: 0.2s linear;
-    }
 }
