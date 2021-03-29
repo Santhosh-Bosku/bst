@@ -72,11 +72,12 @@ header h1, a
 
 #login-form div form button
 {
-    width: 10vw;
+    width: 20vw;
     height: 5vh;
     background-color: black;
     color: white;
     border: none;
+    font-size: 1vw;
 }
 
 #login-form div form a
@@ -128,11 +129,12 @@ header h1, a
 
     #login-form div form button
     {
-        width: 10vh;
-        height: 5vh;
+        width: 80vw;
+        height: 6vh;
         background-color: black;
         color: white;
         border: none;
+        font-size: 2vh;
     }
 
     #login-form div form a

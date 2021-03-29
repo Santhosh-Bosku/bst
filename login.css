@@ -58,7 +58,7 @@ header h1, a
     display: block;
     height: 5vh;
     width: 20vw;
-    margin: 5vh 0;
+    margin: 5vh auto;
     font-size: 1vw;
     outline: none;
     text-indent: 1vw;
@@ -72,17 +72,24 @@ header h1, a
 
 #login-form div form button
 {
-    width: 10vw;
+    width: 20vw;
     height: 5vh;
     background-color: black;
     color: white;
     border: none;
+    font-size: 1vw;
 }
 
 #login-form div form a
 {
     display: inline-block;
-    margin: 5vh 0 0 0;
+    margin: 1vh 0 0 0;
+    text-decoration: none;
+}
+
+#signup
+{
+    margin-right: 8vw !important;
 }
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
@@ -114,7 +121,7 @@ header h1, a
         display: block;
         height: 6vh;
         width: 80vw;
-        margin: 5vh 0;
+        margin: 5vh auto;
         font-size: 2vh;
         outline: none;
         text-indent: 1vh;
@@ -128,17 +135,23 @@ header h1, a
 
     #login-form div form button
     {
-        width: 10vh;
+        width: 80vw;
         height: 5vh;
         background-color: black;
         color: white;
         border: none;
+        font-size: 2vh;
     }
 
     #login-form div form a
     {
         display: inline-block;
-        margin: 5vh 0 0 0;
+        margin: 2vh 0 0 0;
+    }
+
+    #signup
+    {
+        margin-right: 25vw !important;
     }
 
 }
