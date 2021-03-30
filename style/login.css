@@ -107,6 +107,12 @@ header h1, a
     text-decoration: none;
 }
 
+#login-form div ul li:last-child
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
 #signup
 {
     margin-right: 8vw !important;
