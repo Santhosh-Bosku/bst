@@ -70,6 +70,13 @@ header h1, a
     text-indent: 1vw;
 }
 
+#login-form div form p
+{
+    max-width: 20vw;
+    font-size: 0.8vw;
+    margin: 0 auto 3vh auto;
+}
+
 #login-form div form button
 {
     width: 20vw;
@@ -80,7 +87,20 @@ header h1, a
     font-size: 1vw;
 }
 
-#login-form div form a
+#login-form div ul
+{
+    display: flex;
+    width: 20vw;
+    list-style: none;
+}
+
+#login-form div ul li
+{
+    display: inline-block;
+    width: 50%;
+}
+
+#login-form div ul li a
 {
     display: inline-block;
     margin: 1vh 0 0 0;
