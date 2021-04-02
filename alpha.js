@@ -40,3 +40,10 @@ function autoType(elementClass, typingSpeed){
     // The second paramter is the speed between each letter is typed.   
     autoType(".type-js",50);
   });
+
+  $(document).ready(function() {
+    /* ... */
+    var windowHeight = $(window).innerHeight();
+    $('body').css({'height':windowHeight});
+    /* ... */
+});
