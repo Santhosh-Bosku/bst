@@ -145,7 +145,7 @@ header h1, a
     #login-form div form input
     {
         display: block;
-        height: 6vh;
+        height: 10vw;
         width: 80vw;
         margin: 5vh auto;
         font-size: 2vh;
@@ -169,7 +169,7 @@ header h1, a
     #login-form div form button
     {
         width: 80vw;
-        height: 5vh;
+        height: 10vw;
         background-color: black;
         color: white;
         border: none;
