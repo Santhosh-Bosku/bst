@@ -28,7 +28,7 @@ header h1, a
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 #login-form div
