@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#timeline
+{
+    overflow-y: scroll;
+}
+
+#timeline::-webkit-scrollbar
+{
+    width: 2px;
+}
+
+#timeline::-webkit-scrollbar-track
+{
+    background-color: rgb(255, 255, 255);
+}
+
+#timeline::-webkit-scrollbar-thumb
+{
+    width: 0.1vw;
+    background-color: rgb(0, 0, 0);
+}
+
+#post-container div:nth-child(1)
+{
+    width: 100%;
+    height: 6vh;
+    background-color: gray;
+}
+
+#post-container div:nth-child(2)
+{
+    width: 100%;
+    height: 48vh;
+    /* background-color: forestgreen; */
+}
+
+#post-container div:last-child
+{
+    width: 100%;
+    height: auto;
+    background-color: gray;
+}
+
+#post-container
+{
+    width: 100%;
+    margin-bottom: 0.5vh;
+}
+
+#post-body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#post-body img
+{
+    /* width: 100%; */
+    height: 100%;
+}
+
+#post-footer #comment-icon
+{
+    width: 100%;
+    height: 6vh;
+}
+
+#post-footer #comment-box
+{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+#comment-box .row
+{
+    width: 100%;
+}
+
+#comment-box .row form
+{
+    width: 100%;
+    height: 100%;
+}
+
+#comment-box .row form ul
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+#comment-box .row form ul li
+{
+    width: 50%;
+}
+
+#comment-box .row form ul li:nth-child(1)
+{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+#comment-box .row form ul li:nth-child(1) input
+{
+    width: 80%;
+    height: 4vh;outline: none;
+}
+
+#comment-box .row form ul li button
+{
+    width: 20%;
+    border: none;
+    height: 4vh;
+    margin-left: 10%;
+}
+
+#comment-box .row:last-child
+{
+    margin: 5vh 0 0 0;
+    width: 90%;
+    margin: 5vh auto;
+}
+
+#comment-box .row:last-child p
+{
+    display: inline-block;
+}
+
+#comment-box .row:last-child span
+{
+    display: inline-block;
+}
+
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+
+}
