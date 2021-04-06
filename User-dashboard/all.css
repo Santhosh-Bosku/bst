@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     scroll-behavior: smooth;
+    border: none;
 }
 
 body
@@ -131,7 +132,7 @@ header ul li .row:last-child div label
 {
     width: 25vw;
     height: 70vh;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #container .row:nth-child(1)
@@ -139,6 +140,11 @@ header ul li .row:last-child div label
     width: 60vw;
     display: flex;
     justify-content: center;
+}
+
+#container #board
+{
+    background-color: #ccc;
 }
 
 #container #box .col
@@ -283,7 +289,7 @@ header ul li .row:last-child div label
         align-items: center;
     }
 
-    header ul li .row:last-child div label
+    header ul li .row:last-child div a
     {
         width: 100%;
         height: 10%;
@@ -292,7 +298,7 @@ header ul li .row:last-child div label
         justify-content: flex-end;
     }
 
-    header ul li .row:last-child div label img
+    header ul li .row:last-child div a img
     {
         width: 5vh;
     }
@@ -382,4 +388,63 @@ header ul li .row:last-child div label
     {
         display: none;
     }
+
+    #container #box
+    {
+        flex-direction: column-reverse;
+    }
+
+
+    #container #box .col
+    {
+        height: 100%;
+    }
+
+    #container #box .col:nth-child(1)
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    #container #box .col:last-child
+    {
+        width: 100%;
+        height: 10vw;
+        background-color: black;
+    }
+
+
+    #container #box .col:last-child ul
+    {
+        list-style: none;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container #box .col:last-child ul li
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #container #box .col:last-child ul li a
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    #container #box .col:last-child ul li a img
+    {
+        width: 6vw;
+    }
+
 }

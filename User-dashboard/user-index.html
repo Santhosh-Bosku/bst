@@ -31,9 +31,9 @@
                <div class="row">
                    <div id="pro-img-icon">
                         <img src="images/user.svg" alt="pro-icon" class="mv-none">  
-                        <label for="Profile" class="mv">
+                        <a href="">
                             <img src="images/user.svg" alt="pro-icon">
-                        </label>                       
+                        </a>                       
                    </div>
                </div>
             </li>
@@ -49,13 +49,19 @@
                 <li><a href="">LogOut</a></li>
             </ul>
         </ul>
-        <div id="edit-profile" class="mv"></div>
+        <!-- <div id="edit-profile" class="mv"></div> -->
     </header>
     <div id="container">
         <div class="row" id="box">
             <div class="col" id="timeline">
                 <div id="post-container">
-                    <div id="post-header"></div>
+                    <div id="post-header">
+                        <ul>
+                            <li><a href=""><img src="images/user.svg" alt=""><p>demo@1234</p></a></li>
+                            <li><p>2:30 am, 2-3-89</p>
+                            <p>demo</p></li>
+                        </ul>
+                    </div>
                     <div id="post-body">
                         <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="image">
                     </div>
@@ -78,14 +84,29 @@
                                 </form>
                             </div>
                             <div class="row">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
-                                <span>demo@123</span>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
+                                    <span>demo@123</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
+                                    <span>demo@123</span>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
                 <div id="post-container">
-                    <div id="post-header"></div>
+                    <div id="post-header">
+                        <ul>
+                            <li><a href=""><img src="images/user.svg" alt=""><p>demo@1234</p></a></li>
+                            <li>
+                                <p>2:30 am, 2-3-89</p>
+                                <p>demo</p></li>
+                            </li>
+                        </ul>
+                    </div>
                     <div id="post-body">
                         <img src="images/pexels-mike-126271.jpg" alt="image">
                     </div>
@@ -108,9 +129,15 @@
                                     </ul>
                                 </form>
                             </div>
-                            <div class="row" id="comment-display">
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
-                                <span>demo@123</span>
+                            <div class="row">
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
+                                    <span>demo@123</span>
+                                </div>
+                                <div class="comment">
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
+                                    <span>demo@123</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +153,7 @@
                 </ul>
             </div>
         </div>
-        <div class="row"></div>
+        <div class="row" id="board"></div>
     </div>
 </body>
 </html>
