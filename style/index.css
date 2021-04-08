@@ -126,5 +126,20 @@ footer #dear-beliver .five
     {
         font-size: 4vw;
     }
+    header
+    {
+        background-color: initial !important;
+    }
+
+    
+    #logo a h1
+    {
+        color: white !important;
+    }
+    
+    #burger-menu label .row
+    {
+        background-color: white;
+    }
 
 }
