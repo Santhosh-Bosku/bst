@@ -7,18 +7,25 @@
 
 #biographies
 {
-    width: 100%;
-    height: 100%;
-    /* display: flex;
+    width: 100vw;
+    height: 92vh;
+    margin-top: 8vh;
+    display: flex;
     justify-content: center;
-    align-items: center; */
-    color: red;
+    align-items: center;
+    gap: 10px;
+    margin: 8vh 0 0 0;
+    padding: 30px;
+    flex-wrap: wrap;
+    background-color: white;
+    overflow-y: scroll;
 }
 
-#biographies div
+#biographies a
 {
-    width: 18%;
-    height: 30%;
-    background-color: red;
+    width: 50px;
+    min-width: 255px;
+    height: 40%;
+    background-color: rgb(129, 128, 131);
 }
 
