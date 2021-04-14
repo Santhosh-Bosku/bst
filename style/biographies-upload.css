@@ -1,0 +1,50 @@
+body
+{
+    background-image: initial;
+    background-color: #ccc !important;
+    overflow: hidden;
+}
+
+header{
+    background-color: #ccc;
+}
+
+#biographies-container
+{
+    width: 100vw;
+    height: 92vh;
+    margin: 8vh 0 0 0;
+    padding: 20px;
+    background-color: rgb(133, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    /* overflow-x: hidden !important; */
+}
+
+#biographies-container .col
+{
+    width: 60vw;
+    height: 71vh;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#biographies-container .col .row
+{
+    height: 80%;
+    background-color: green;
+}
+
+#biographies-container .col .row:nth-child(1)
+{
+    width: 40%;
+}
+#biographies-container .col .row:last-child
+{
+    width: 50%;
+}

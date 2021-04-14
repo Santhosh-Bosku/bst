@@ -148,21 +148,21 @@ header h1, a
         height: 10vw;
         width: 80vw;
         margin: 5vh auto;
-        font-size: 2vh;
+        font-size: 4vw;
         outline: none;
         text-indent: 1vh;
     }
 
     #login-form div form input::placeholder
     {
-        font-size: 2vh;
+        font-size: 4vw;
         text-indent: 1vh;
     }
 
     #login-form div form p
     {
         max-width: 80vw;
-        font-size: 3vw;
+        font-size: 4vw;
         margin: 0 auto 3vh auto;
     }
 
