@@ -14,27 +14,124 @@ header
     margin: 8vh 0 0 0 ;
     width: 100%;
     height: 92vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #biographies-container div
 {
-    width: 100%;
-    /* height: 92vh; */
     text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 }
 #biographies-container div h1
 {
-
+    /* color: red; */
 }
 
-#biographies-container div div
+#biographies-container div:nth-child(1) div
 {
-    width: 60%;
+    width: 60vw;
     margin: 1vh 0 0 0;
-    background-color: red;
     height: 75vh !important;
+}
+
+#biographies-container div:nth-child(1) div embed
+{
+    width: 100%;
+    height: 100%;
+}
+
+#biographies-container div:last-child
+{
+    width: 30vw;
+    height: 80vh;
+    justify-content: flex-start;
+}
+
+#biographies-container div:last-child h1
+{
+    width: 100%;
+    height: 7%;
+}
+
+
+#biographies-container div:last-child ul
+{
+    width: 100%;
+    height: 93%;
+    background-color: gainsboro;
+    overflow-y: scroll;
+}
+
+#biographies-container div:last-child ul li
+{
+    width: 100%;
+    height: 5vh;
+    background-color: white;
+    border-bottom: 1px  solid #ccc;
+}
+
+#biographies-container div:last-child ul li a
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+}
+
+#biographies-container div:last-child ul::-webkit-scrollbar
+{
+    width: 5px;
+    background-color: none;
+}
+
+#biographies-container div:last-child ul::-webkit-scrollbar-thumb
+{
+    width: 5px;
+    background-color: black;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #biographies-container div
+    {
+        width: 100vw;
+        height: 100%;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #biographies-container div h1
+    {
+        font-size: 5vw;
+        height: 7%;
+        margin: 7% 0 0 0;
+    }
+
+    #biographies-container #min-bio
+    {
+        display: none;
+    }
+
+    #biographies-container div:nth-child(1) div
+    {
+        opacity: 1 !important;
+        width: 100%;
+        margin: 1vh 0 0 0;
+        height: 93%!important;
+        background-color: red;
+    }
+    
+    #biographies-container div:nth-child(1) div embed
+    {
+        /* background-color: black; */
+    }
 }
