@@ -1,513 +1,157 @@
-*
+#post-container
 {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 80%;
+    height: auto;
+    padding-bottom: 10vh;
 }
 
-#timeline
+.post
 {
-    overflow-y: scroll;
+    width: 90%;
+    height: auto;
+    box-shadow: 0 0 8px black;
+    margin: 5vh auto 0 auto;
 }
 
-#timeline::-webkit-scrollbar
-{
-    width: 2px;
-}
-
-#timeline::-webkit-scrollbar-track
-{
-    background-color: rgb(255, 255, 255);
-}
-
-#timeline::-webkit-scrollbar-thumb
-{
-    width: 0.1vw;
-    background-color: rgb(0, 0, 0);
-}
-
-#post-container #post-header
+.post-header
 {
     width: 100%;
-    height: 6vh;
-    background-color: gray;
+    height: 10vh;
 }
 
-#post-header ul
+.post-header ul
 {
-    display: flex;
+    width: 100%;
+    height: 100%;
     list-style: none;
 }
 
-#post-header ul li
+.post-header ul a
 {
-   width: 50%;
-   height: 100%;
-}
-
-#post-header ul li:last-child
-{
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    flex-direction: column;
-    font-size: 2.5vw;
-}
-
-#post-header ul li a
-{
+    display: inline-block;
     width: auto;
-    height: 6vh;
+    height: 100%;
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 1vw;
+    /* flex-direction: column; */
+    color: black;
+    font-size: 0.8vw;
+    font-weight: 600;
 }
 
-#post-header ul li a img
+.post-header ul .post-user-img
 {
-    width: 5vh;
-    margin:  0 1vw;
-    display: inline-block;
-} 
-
-#post-header ul li  p
-{
-    display: inline-block;
-    color: white;
-    font-size: 2vh;
-    margin: 0 2vw 0 0;
+    width: 5vw;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-#post-container #post-body
+.post-header ul .post-user-img img
 {
-    width: 100%;
-    height: 48vh;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
 }
 
-#post-container #post-footer
+.post-body
 {
     width: 100%;
     height: auto;
-    background-color: gray;
 }
 
-#post-container
-{
-    width: 100%;
-    margin-bottom: 0.5vh;
-    overflow: hidden;
-}
-
-#post-body
+.post-body
 {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 0 0 2vw;
 }
 
-#post-body img
+.post-body a
 {
-    /* width: 100%; */
-    height: 100%;
+    text-decoration: none;
 }
 
-#post-footer #comment-icon
+.post-body h1
+{
+    font-size: 2vw;
+    margin: 2vh 0 2vh 0;
+    color: rgb(53, 53, 53);
+}
+
+.post-body h1:hover
+{
+    color: #28b5b5;
+    cursor: pointer;
+}
+
+.post-body img
+{
+    max-width: 80%;
+    max-height: 100vh;
+    border-radius: 5px;
+    /* margin: 0 0 0 3vw; */
+}
+
+.post-body p
+{
+    width: 95%;
+    margin: 5vh 0;
+    font-size: 0.8vw;
+    font-family: 600;
+}
+
+.post-footer
 {
     width: 100%;
-    height: 6vh;
-    /* background-color: red; */
+    height: 8vh;
 }
 
-#post-footer #comment-icon ul 
+.post-footer ul
 {
-    width: 100%;
+    width: 95%;
     height: 100%;
-    display: flex;
-    align-items: center;
     list-style: none;
-
-}
-
-#post-footer #comment-icon ul li
-{
-    width: 50%;
-    height: 100%;
-}
-
-#post-footer #comment-icon ul li:nth-child(1)
-{
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 2%;
-}
-
-#post-footer #comment-icon ul li:last-child
-{
-    display: flex;
-    align-items: center;
     justify-content: flex-end;
-    margin-right: 5%;
+    align-items: center;
+    border-top: 2px solid #ccc;
+    margin: 0 auto;
+
 }
 
-#post-footer #comment-icon ul li label img
+.post-footer ul li
 {
-    width: 1.8vw;
+    /* width: 25%; */
+    height: 100%;
+    float: left;
+    margin:  0 1%;
+    display: flex;
+    align-items: center;
 }
 
-#post-footer #comment-icon ul li a img
+/* .post-footer ul li a
+{
+
+} */
+
+.post-footer ul li a img
 {
     width: 2vw;
 }
 
-#post-footer #comment-box
+.post-footer ul li a img:hover
 {
-    width: 100%;
-    height: 30vh;
-    overflow: hidden;
-    background-color: rgb(206, 206, 206);
-    transition: all 0.3s ease-in-out;
+    /* fill: red; */
 }
-
-#comment-box .row
-{
-    width: 100%;
-    background-color: none !important;
-    border: none !important;
-}
-
-#comment-box .row:nth-child(1)
-{
-    height: 10vh;
-}
-
-#comment-box .row form
-{
-    width: 100%;
-    height: 100%;
-    background-color: none !important;
-}
-
-#comment-box .row form ul
-{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-}
-
-#comment-box .row form ul li
-{
-    width: 50%;
-    background-color: none !important;
-}
-
-#comment-box .row form ul li:nth-child(1)
-{
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-#comment-box .row form ul li:nth-child(1) input
-{
-    width: 80%;
-    height: 4vh;outline: none;
-}
-
-#comment-box .row form ul li button
-{
-    width: 20%;
-    border: none;
-    height: 4vh;
-    margin-left: 10%;
-    background-color: black;
-    color: white;
-}
-
-#comment-box .row:last-child
-{
-    display: block !important;
-    width: 100%;
-    height: 20vh;
-    overflow-y: scroll;
-}   
-
-
-#comment-box .row .comment
-{
-    display: inline-block;
-    /* width: 100%; */
-    margin: 1vw 0 0 1vw !important;
-}
-
-#comment-box .row .comment p
-{
-    font-size:1vw;
-    /* font-weight: 600; */
-}
-
-#comment-box .row .comment span
-{
-    font-size: 1vw;
-    font-weight: 600;
-}
-
-#comment-section:checked ~ #post-footer #comment-box
-{
-    height: 0vw;
-    transition: height 0.3s ease-in-out;
-}
-
 
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
 
-    
-    #timeline
-    {
-        overflow-y: scroll;
-    }
-
-
-
-    #post-container #post-header
-    {
-        width: 100%;
-        height: 10vw;
-        background-color: gray;
-    }
-
-    #post-header ul
-    {
-        display: flex;
-        list-style: none;
-    }
-
-    #post-header ul li
-    {
-        width: 50%;
-    }
-
-    #post-header ul li:last-child
-    {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-        flex-direction: column;
-        font-size: 2.5vw;
-    }
-
-    #post-header ul li a
-    {
-        width: auto;
-        height: 10vw;
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-        font-size: 3vw;
-    }
-
-    #post-header ul li a img
-    {
-        width: 8vw;
-        margin:  0 2vw;
-        display: inline-block;
-    } 
-
-    #post-header ul li a p
-    {
-        display: inline-block;
-        color: white;
-    }
-
-    #post-container div:nth-child(2)
-    {
-        width: 100%;
-        height: 48vh;
-    }
-
-    #post-container #post-footer
-    {
-        width: 100%;
-        height: auto;
-        background-color: gray;
-    }
-
-    #post-container
-    {
-        width: 100%;
-        margin-bottom: 0.5vh;
-        overflow: hidden;
-    }
-
-    #post-body
-    {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #post-body img
-    {
-        /* width: 100%; */
-        height: 100%;
-    }
-
-    #post-footer #comment-icon
-    {
-        width: 100%;
-        height: 10vw;
-        /* background-color: red; */
-    }
-
-    #post-footer #comment-icon ul 
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        list-style: none;
-
-    }
-
-    #post-footer #comment-icon ul li
-    {
-        width: 50%;
-        height: 100%;
-    }
-
-    #post-footer #comment-icon ul li:nth-child(1)
-    {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin-left: 3%;
-    }
-
-    #post-footer #comment-icon ul li:last-child
-    {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right: 5%;
-    }
-
-    #post-footer #comment-icon ul li label img
-    {
-        width: 6vw;
-    }
-
-    #post-footer #comment-icon ul li a img
-    {
-        width: 6vw;
-    }
-
-    #post-footer #comment-box
-    {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        background-color: rgb(206, 206, 206);
-        transition: all 0.3s ease-in-out;
-    }
-
-    #comment-box .row
-    {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: none !important;
-    }
-
-    #comment-box .row:nth-child(1)
-    {
-        height: 10vw !important;
-    }
-
-    #comment-box .row form
-    {
-        width: 100%;
-        height: 100%;
-        background-color: none !important;
-    }
-
-    #comment-box .row form ul
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-    }
-
-    #comment-box .row form ul li
-    {
-        width: 50%;
-        background-color: none !important;
-    }
-
-    #comment-box .row form ul li:nth-child(1)
-    {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-
-    #comment-box .row form ul li:nth-child(1) input
-    {
-        width: 80%;
-        height: 6vw;outline: none;
-        border: 1px solid rgb(105, 105, 105);
-    }
-
-    #comment-box .row form ul li button
-    {
-        width: 50%;
-        border: none;
-        height: 4vh;
-        margin-left: 10%;
-        background-color: black;
-        color: white;
-    }
-
-    #comment-box .row:last-child
-    {
-        display: block !important;
-        height: 30vw;
-        overflow: scroll;
-    }    
-
-    #comment-box .row:last-child .comment 
-    {
-        width: auto;
-        height: auto;
-        display: inline-block;
-        margin: 5vw 0 5vw 2vw;
-        /* text-align: center; */
-    }
-
-    #comment-box .row:last-child .comment p
-    {
-        font-size: 3vw;
-    }
-
-    #comment-box .row:last-child .comment span
-    {
-        font-size: 3vw;
-        font-weight: 600;
-    }
-
-    #comment-section:checked ~ #post-footer #comment-box
-    {
-        height: 40vw;
-        transition: height 0.3s ease-in-out;
-    }
 }

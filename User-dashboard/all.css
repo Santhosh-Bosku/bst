@@ -3,14 +3,12 @@
     margin: 0;
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    scroll-behavior: smooth;
-    border: none;
 }
 
 body
 {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     position: relative;
     overflow-x: hidden;
 }
@@ -19,74 +17,71 @@ header
 {
     width: 100%;
     height: 8vh;
-    background-color:#ccc;
-    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+    box-shadow: 0 0 1px black;
 }
 
 header ul
 {
-    list-style: none;
     width: 100%;
     height: 100%;
+    list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
 header ul li
 {
-    width: 33.3%;
+    display: inline-block;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+}
+
+.mb-view
+{
+    display: none;
+}
+
+header ul li#logout
+{
+    float: right;
+}
+
+header ul li#logout a
+{
+    float: right;
+    width: auto;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-header #main-menu li:nth-child(2)
+header ul li a img
 {
-    padding: 0 0 0 5vw;
-    justify-content: flex-start;
+    height: 60%;
+    margin: 0 1vw 0 0;
 }
 
-header ul li:last-child
-{
-    width: 10vw;
-    z-index: 999;
-}
-
-header ul li .row
-{
-    height: 100%;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-header ul li .row:nth-child(1)
-{
-    width: 10vw;
-    margin-right: 10px;
-}
-header ul li .row:last-child
-{
-    width: 10vw;
-}
-
-header ul li .row:last-child div img
-{
-    width: 2vw;
-    border-radius: 50%;
-}
-
-header ul li .row:last-child div label
-{
-    cursor: pointer;
-}
-
-#menu
+#body-container
 {
     width: 100%;
-    height: 6vh;
-    background-color: rgba(204, 204, 204, 0.822);
+    height: auto;
+    margin-top: 8vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#body-container #menu
+{
+    width: 4vw;
+    height: 92vh;
+    position: fixed;
+    /* right: 0; */
+    background-color: rgb(38, 206, 75);
 }
 
 #menu ul
@@ -94,359 +89,53 @@ header ul li .row:last-child div label
     width: 100%;
     height: 100%;
     list-style: none;
-    display: flex;
-    justify-content: center;
 }
 
 #menu ul li
 {
-    width: auto;
-    margin: 0 3vw !important;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: ;
 }
 
-#menu ul li a
+#menu ul li a img
 {
-    font-weight: 600;
-    text-decoration: none;
-    color: black;
+    width: 80%;
 }
 
-.mv, .none
-{
-    display: none;
-}
-
-#container
+#body-container #container
 {
     width: 100%;
-    height: 86vh;
-    margin-top: 6vh;
+    height: auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#container .row
-{
-    width: 25vw;
-    height: 70vh;
-    /* border: 1px solid black; */
-}
-
-#container .row:nth-child(1)
-{
-    width: 60vw;
-    display: flex;
+    overflow-x: hidden;
     justify-content: center;
-}
-
-#container #board
-{
-    background-color: #ccc;
-}
-
-#container #box .col
-{
-    height: 100%;
-}
-
-#container #box .col:nth-child(1)
-{
-    width: 93%;
-}
-
-#container #box .col:last-child
-{
-    width: 7%;
-    background-color: black;
-}
-
-
-#container #box .col:last-child ul
-{
-    list-style: none;
-    width: 100%;
-    height: 100%;
-}
-
-#container #box .col:last-child ul li
-{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#container #box .col:last-child ul li a
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-#container #box .col:last-child ul li a img
-{
-    width: 2vw;
 }
 
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
-    .mv-none
+    .mb-view
     {
-        display: none !important;
+        display: inline-block;
     }
-
-    .mv
-    {
-        display: block !important;
-    }
-
-    header #main-menu 
-    {
-        width: 100%;
-    }
-
-    header ul
-    {
-        list-style: none;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    header ul li
-    {
-        width: 33.3% !important;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* background-color: red; */
-    }
-
-    header ul #burger-menu
-    {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    header ul #burger-menu div
-    {
-        width: 60% !important;
-        height: 8vh;
-        /* background-color: green; */
-    }
-
-    header ul #burger-menu div label
-    {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    header ul #burger-menu div label div
-    {
-        width: 50% !important;
-        height: 1.5vw;
-        background-color: black;
-        margin-top: 1vw;
-    }
-
-    header #main-menu li:nth-child(2)
-    {
-        justify-content: center;
-        text-align: center;
-    }
-
-    header ul li:nth-child(1)
-    {
-        z-index: 999;
-    }
-    header ul li:last-child
-    {
-        margin: 0 5vw 0 0;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        z-index: 999;
-    }
-
-    header ul li
-
-    header ul li .row
-    {
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
-
-    header ul li .row:last-child div a
-    {
-        width: 100%;
-        height: 10%;
-        cursor: pointer;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    header ul li .row:last-child div a img
-    {
-        width: 5vh;
-    }
-
-    #hidden-menu:checked ~ header ul#menu
-    {
-        transform: translateX(0);
-    }
-
-    #menu
-    {
-
-        width: 100vw !important;
-        height: 92vh;
-        background-color: rgba(204, 204, 204, 0.822);
-        position: absolute;
-        z-index: 998 !important;
-        transform: translateX(-100%);
-        transition: 0.3s ease-in-out;
-    }
-
-    #menu ul
-    {
-        width: 100%;
-        height: 100%;
-        list-style: none;
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        background-color: #ccc;
-    }
-
-    #menu ul li
-    {
-        width: 100vw !important;
-        height: 6vh;
-        margin: 1vw 0 0 0  !important;
-        background-color: white;
-        display: flex;
-        justify-content: center;
-    }
-
-    #menu ul li a
-    {
-        font-weight: 600;
-        text-decoration: none;
-        color: black;
-    }
-
-    #Profile:checked ~ header #edit-profile
-    {
-        background-color: green;
-        transform: translateX(0%);
-    }
-
-    #edit-profile
-    {
-        position: absolute;
-        width: 100%;
-        height: 92vh;
-        background-color: red;
-        transform: translateX(100%);
-        transition: 0.3s ease-in-out;
-    }
-
-    #container
-    {
-        width: 100%;
-        height: 92vh;
-        margin-top: 0vh;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        z-index: 997;
-    }
-
-    #container .row:nth-child(1)
-    {
-        width: 100%;
-        height: 100%;
-        margin: 0 !important; 
-        padding: 0 !important;
-        background-color: white;
-    }
-
-    #container .row:nth-child(2)
+    .mb-none
     {
         display: none;
     }
 
-    #container #box
+    header ul li
     {
-        flex-direction: column-reverse;
-    }
-
-
-    #container #box .col
-    {
-        height: 100%;
-    }
-
-    #container #box .col:nth-child(1)
-    {
-        width: 100%;
-        height: auto;
-    }
-
-    #container #box .col:last-child
-    {
-        width: 100%;
-        height: 10vw;
-        background-color: black;
-    }
-
-
-    #container #box .col:last-child ul
-    {
-        list-style: none;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #container #box .col:last-child ul li
-    {
-        width: 100%;
-        height: 100%;
+        width: 33%;
         display: flex;
         align-items: center;
         justify-content: center;
     }
-
-    #container #box .col:last-child ul li a
+    header ul li a
     {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         height: 100%;
+        display: flex;
+        align-items: center;
+        float: right;
+        margin: 0 3vw 0 0;
     }
-
-    #container #box .col:last-child ul li a img
-    {
-        width: 6vw;
-    }
-
 }

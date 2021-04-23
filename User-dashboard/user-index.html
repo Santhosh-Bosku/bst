@@ -3,157 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="user-index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.css">
-    <title>User_Timeline</title>
+    <link rel="stylesheet" href="user-index.css">
+    <title>User-index</title>
 </head>
 <body>
-    <input type="checkbox" name="" id="hidden-menu" class="none">
-    <input type="checkbox" name="" id="Profile" class="none">
     <header>
-        <ul id="main-menu">
-            <li class="mv" id="burger-menu">
-                <div>
-                    <label for="hidden-menu">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </label>
+        <ul>
+            <li class="mb-view" id="burger-menu">
+                <div id="burger-menu-container">
+                    <div class="row"></div>
+                    <div class="row"></div>
+                    <div class="row"></div>
                 </div>
             </li>
-            <li><h1>LOGO</h1></li>
-            <li>
-               <div class="row mv-none">
-                   <p>Demo@123</p>
-               </div>
-               <div class="row">
-                   <div id="pro-img-icon">
-                        <img src="images/user.svg" alt="pro-icon" class="mv-none">  
-                        <a href="" class="mv">
-                            <img src="images/user.svg" alt="pro-icon">
-                        </a>                       
-                   </div>
-               </div>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-none">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li class="mb-view">
+                <a href="">
+                    <img src="images/user.svg" alt="user">
+                </a>
             </li>
         </ul>
-        <ul id="menu">
-            <ul>
-                <li><a href="">Profile</a></li>
-                <li><a href="">Be A Leader</a></li>
-                <li><a href="">My Progress</a></li>
-                <li><a href="">Prayer Request</a></li>
-                <li><a href="">Refer</a></li>
-                <li><a href="">Contact Us</a></li>
-                <li><a href="">LogOut</a></li>
-            </ul>
-        </ul>
-        <!-- <div id="edit-profile" class="mv"></div> -->
     </header>
-    <div id="container">
-        <div class="row" id="box">
-            <div class="col" id="timeline">
-                <div id="post-container">
-                    <div id="post-header">
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li><a href=""><img src="images/user.png" alt="profile"></a></li>
+                <li><a href=""><img src="images/icons/bible.svg" alt=""></a></li>
+                <li><a href=""><img src="images//icons/megaphone.svg" alt=""></a></li>
+                <li><a href=""><img src="images/icons/prayer.svg" alt=""></a></li>
+                <li><a href=""><img src="images/icons/settings.svg" alt=""></a></li>
+                <li><a href=""><img src="images/graphic-progression.svg" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+                <li><a href=""><img src="" alt=""></a></li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="post-container">
+                <div class="post">
+                    <div class="post-header">
                         <ul>
-                            <li><a href=""><img src="images/user.svg" alt=""><p>demo@1234</p></a></li>
-                            <li><p>2:30 am, 2-3-89</p>
-                            <p>demo</p></li>
+                            <a href="">
+                                <li class="post-user-img">
+                                    <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+                                </li>
+                                <li class="post-user-name-date">
+                                    <p>Demo@123</p>
+                                    <p>Posted on <span id="date">jun2-24-2301</span></p>
+                                </li>
+                            </a>
                         </ul>
                     </div>
-                    <div id="post-body">
-                        <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="image">
+                    <div class="post-body">
+                        <a href=""><h1>Heading of the post</h1></a>
+                        <img src="images/pexels-mike-126271.jpg" alt="post-image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
                     </div>
-                    <div id="post-footer">
-                        <div id="comment-icon">
-                            <ul>
-                                <li><label for="#comment-section"><img src="images/icons/black-bubble-speech.svg" alt=""></label></li>
-                                <li>
-                                    <a href=""><img src="images/icons/share.svg" alt="share"></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="comment-box">
-                            <div class="row">
-                                <form action="">
-                                    <ul>
-                                        <li><input type="text"></li>
-                                        <li><button type="submit">Comment</button></li>
-                                    </ul>
-                                </form>
-                            </div>
-                            <div class="row">
-                                <div class="comment">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
-                                    <span>demo@123</span>
-                                </div>
-                                <div class="comment">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
-                                    <span>demo@123</span>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div id="post-container">
-                    <div id="post-header">
+                    <div class="post-footer">
                         <ul>
-                            <li><a href=""><img src="images/user.svg" alt=""><p>demo@1234</p></a></li>
-                            <li>
-                                <p>2:30 am, 2-3-89</p>
-                                <p>demo</p></li>
+                            <li id="comment">
+                                <a href="">
+                                    <img src="images/chat.svg" alt="comment">
+                                </a>
+                            </li>
+                            <li id="share">
+                                <a href="">
+                                    <img src="images/share.svg" alt="sah">
+                                </a>
                             </li>
                         </ul>
                     </div>
-                    <div id="post-body">
-                        <img src="images/pexels-mike-126271.jpg" alt="image">
-                    </div>
-                    <input type="checkbox" name="comment-section" id="comment-section" class="none">
-                    <div id="post-footer">
-                        <div id="comment-icon">
-                            <ul>
-                                <li><label for="comment-section"><img src="images/icons/black-bubble-speech.svg" alt=""></label></li>
-                                <li>
-                                    <a href=""><img src="images/icons/share.svg" alt="share"></a>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <ul>
+                            <a href="">
+                                <li class="post-user-img">
+                                    <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
                                 </li>
-                            </ul>
-                        </div>
-                        <div id="comment-box">
-                            <div class="row">
-                                <form action="">
-                                    <ul>
-                                        <li><input type="text"></li>
-                                        <li><button type="submit">Comment</button></li>
-                                    </ul>
-                                </form>
-                            </div>
-                            <div class="row">
-                                <div class="comment">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
-                                    <span>demo@123</span>
-                                </div>
-                                <div class="comment">
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, laborum, dignissimos quasi aliquid ut molestias dolore officia dolorum, ipsa nulla eius similique nostrum vel. Sed dolorum reiciendis incidunt vel possimus.</p>
-                                    <span>demo@123</span>
-                                </div>
-                            </div>
-                        </div>
+                                <li class="post-user-name-date">
+                                    <p>Demo@123</p>
+                                    <p>Posted on <span id="date">jun2-24-2301</span></p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="post-body">
+                        <h1>Heading of the post</h1>
+                        <img src="images/jakob-owens-Il--NpJ4zyc-unsplash.jpg" alt="post-image">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente corporis quam ipsam similique suscipit doloribus cupiditate voluptas quaerat dolor voluptates, ad mollitia! Suscipit assumenda ut quas itaque magnam odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
+                    </div>
+                    <div class="post-footer">
+                        <ul>
+                            <li id="comment">
+                                <a href="">
+                                    <img src="images/chat.svg" alt="comment">
+                                </a>
+                            </li>
+                            <li id="share">
+                                <a href="">
+                                    <img src="images/icons/share.svg" alt="sah">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col" id="box-navigation">
-                <ul>
-                    <li><a href=""><img src="images/icons/blog.svg" alt="Blog" srcset="" title="Blog"></a></li>
-                    <li><a href=""><img src="images/icons/puzzle-piece.svg" alt="Quiz" srcset="" title="Quiz"></a></li>
-                    <li><a href=""><img src="images/icons/plus.svg" alt="" title="Post"></a></li>
-                    <li><a href=""><img src="images/icons/bible.svg" alt="" title="Bible Study"></a></li>
-                    <li><a href=""><img src="images/icons/megaphone.svg" alt="" title="Notification"></a></li>
-                </ul>
+                
             </div>
         </div>
-        <div class="row" id="board"></div>
-    </div>
+    </section>
 </body>
 </html>

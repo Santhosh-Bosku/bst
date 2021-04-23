@@ -113,7 +113,6 @@ header
     {
         font-size: 5vw;
         height: 7%;
-        margin: 7% 0 0 0;
     }
 
     #biographies-container #min-bio
@@ -127,11 +126,5 @@ header
         width: 100%;
         margin: 1vh 0 0 0;
         height: 93%!important;
-        background-color: red;
-    }
-    
-    #biographies-container div:nth-child(1) div embed
-    {
-        /* background-color: black; */
     }
 }
