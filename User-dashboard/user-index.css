@@ -9,8 +9,10 @@
 {
     width: 90%;
     height: auto;
+    border-radius: 5px;
     box-shadow: 0 0 8px black;
     margin: 5vh auto 0 auto;
+    background-color: white;
 }
 
 .post-header
@@ -60,12 +62,8 @@
 
 .post-body
 {
-    width: 100%;
+    width: auto;
     height: auto;
-}
-
-.post-body
-{
     display: flex;
     align-items: flex-start;
     flex-direction: column;
@@ -86,7 +84,7 @@
 
 .post-body h1:hover
 {
-    color: #28b5b5;
+    color: #41d5a6;
     cursor: pointer;
 }
 
@@ -153,5 +151,60 @@
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
+    #container
+    {
+        flex-direction: column;
+    }
 
+    #post-container
+    {
+        width: 100%;
+        margin: 6vh 0 0 0;
+        padding-bottom: 5vh !important;
+    }
+    .post
+    {
+        width: 95%;
+    }
+
+    .post-header ul .post-user-img
+    {
+        width: 15%;
+        height: 80%;
+        border-radius: 50%;
+    }
+    .post-header ul a
+    {        
+        font-size: 3vw;
+    }
+
+    .post-body h1
+    {
+        font-size: 6vw;
+    }
+
+    .post-body p
+    {
+        font-size: 3vw;
+    }
+
+    .post-footer ul
+    {
+        justify-content: space-between;
+    }
+
+    .post-footer ul li a img
+    {
+        width: 6vw;
+    }
+
+    #mobile-nav
+    {
+        width: 100%;
+        height: 8vh;
+        background-color: black;
+        position: fixed;
+        top: 8vh;
+        z-index: 998;
+    }
 }

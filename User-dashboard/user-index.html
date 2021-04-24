@@ -6,28 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="user-index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>User-index</title>
 </head>
 <body>
+    <input type="checkbox" id="in1">
     <header>
         <ul>
-            <li class="mb-view" id="burger-menu">
+            <li class="" id="burger-menu">
                 <div id="burger-menu-container">
-                    <div class="row"></div>
-                    <div class="row"></div>
-                    <div class="row"></div>
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
                 </div>
             </li>
             <li id="logo">
                 <h1>Logo</h1> 
             </li>
-            <li id="logout" class="mb-none">
+            <li id="logout" class="mb-view">
                 <a href="">
                     <img src="images/logout.svg" alt="logout">
                 </a>
             </li>
-            <li class="mb-view">
+            <li id="profile-icon" class="mb-none">
                 <a href="">
+                    <p>Demo@123456789123456789</p>
                     <img src="images/user.svg" alt="user">
                 </a>
             </li>
@@ -36,19 +41,70 @@
     <section id="body-container">
         <div id="menu">
             <ul>
-                <li><a href=""><img src="images/user.png" alt="profile"></a></li>
-                <li><a href=""><img src="images/icons/bible.svg" alt=""></a></li>
-                <li><a href=""><img src="images//icons/megaphone.svg" alt=""></a></li>
-                <li><a href=""><img src="images/icons/prayer.svg" alt=""></a></li>
-                <li><a href=""><img src="images/icons/settings.svg" alt=""></a></li>
-                <li><a href=""><img src="images/graphic-progression.svg" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
-                <li><a href=""><img src="" alt=""></a></li>
+                <li>
+                    <a href="">
+                        <img src="images/user.png" alt="profile">
+                        <p class="show" data-aos="fade-left">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
             </ul>
         </div>
         <div id="container">
+            <div id="mobile-nav" class="mb-view"></div>
             <div id="post-container">
                 <div class="post">
                     <div class="post-header">
@@ -66,8 +122,8 @@
                     </div>
                     <div class="post-body">
                         <a href=""><h1>Heading of the post</h1></a>
-                        <img src="images/pexels-mike-126271.jpg" alt="post-image">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
+                        <img src="images/pexels-mike-126271.jpg" alt="post-image" data-aos="fade-in">
+                        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
                     </div>
                     <div class="post-footer">
                         <ul>
@@ -100,8 +156,8 @@
                     </div>
                     <div class="post-body">
                         <h1>Heading of the post</h1>
-                        <img src="images/jakob-owens-Il--NpJ4zyc-unsplash.jpg" alt="post-image">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente corporis quam ipsam similique suscipit doloribus cupiditate voluptas quaerat dolor voluptates, ad mollitia! Suscipit assumenda ut quas itaque magnam odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
+                        <img src="images/jakob-owens-Il--NpJ4zyc-unsplash.jpg" alt="post-image" data-aos="fade-in">
+                        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente corporis quam ipsam similique suscipit doloribus cupiditate voluptas quaerat dolor voluptates, ad mollitia! Suscipit assumenda ut quas itaque magnam odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
                     </div>
                     <div class="post-footer">
                         <ul>
@@ -118,9 +174,51 @@
                         </ul>
                     </div>
                 </div>
-                
+                <div class="post">
+                    <div class="post-header">
+                        <ul>
+                            <a href="">
+                                <li class="post-user-img">
+                                    <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+                                </li>
+                                <li class="post-user-name-date">
+                                    <p>Demo@123</p>
+                                    <p>Posted on <span id="date">jun2-24-2301</span></p>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="post-body">
+                        <h1>Heading of the post</h1>
+                        <img src="images/jakob-owens-Il--NpJ4zyc-unsplash.jpg" alt="post-image" data-aos="fade-in">
+                        <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. A sapiente corporis quam ipsam similique suscipit doloribus cupiditate voluptas quaerat dolor voluptates, ad mollitia! Suscipit assumenda ut quas itaque magnam odit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>
+                    </div>
+                    <div class="post-footer">
+                        <ul>
+                            <li id="comment">
+                                <a href="">
+                                    <img src="images/chat.svg" alt="comment">
+                                </a>
+                            </li>
+                            <li id="share">
+                                <a href="">
+                                    <img src="images/icons/share.svg" alt="sah">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <span style="display: flex;
+                justify-content: center;
+                margin: 10px 0;">Load More</span>
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
 </body>
 </html>
