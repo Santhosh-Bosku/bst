@@ -1,0 +1,90 @@
+
+
+#profile-details
+{
+    width: 100%;
+    height: auto !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: none !important;
+    padding: 3% 0 3% 0;
+}
+
+#profile-details .detail-row:nth-child(1)
+{   
+    width: 60% !important;
+}
+
+#profile-details .detail-row:nth-child(1) .col
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 0 15px -5px black !important;
+    background-color: white;
+    margin: 0 0 4vh 0 ;
+    padding: 0 0 5vh 0;
+}
+
+#profile-details .detail-row:nth-child(1) .col p:first-child
+{
+    margin: 5% 0 0 5%;
+    color: #41d5a6;
+    align-self: start;
+    font-size: 1.5vw;
+}
+
+#profile-details .detail-row:nth-child(1) .col p:last-child
+{
+    color: rgb(104, 104, 104);
+    text-align: justify;
+    text-indent: 10%;
+    padding: 20px;
+}
+
+#profile-details .detail-row:last-child
+{
+    width: 30%;
+    height: 20vh;
+    background-color: gold;
+    margin: 0 0 4vh 0 ;
+
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+
+    #profile-details 
+    {
+        height: auto;
+        padding: 10px !important;
+        padding-bottom: 10vh;
+        background-color: white;
+    }
+
+    #profile-details .detail-row
+    {
+        /* background-color: gainsboro; */
+        /* height: 50vh; */
+        padding: 0 0 20vw 0 ;
+    }
+
+    #profile-details .detail-row .col p:first-child
+    {
+        color: #41d5a6;
+        font-size: 6vw;
+    }
+
+    #profile-details .detail-row .col p:last-child
+    {
+        color: rgb(104, 104, 104);
+        text-align: justify;
+        text-indent: 10%;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}
