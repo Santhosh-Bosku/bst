@@ -3,7 +3,7 @@
 #profile-details
 {
     width: 100%;
-    height: auto !important;
+    height: auto;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -11,48 +11,47 @@
     padding: 3% 0 3% 0;
 }
 
-#profile-details .detail-row:nth-child(1)
-{   
-    width: 60% !important;
+#profile-details .col:first-child
+{
+    width: 65%;
+    height: auto;
 }
 
-#profile-details .detail-row:nth-child(1) .col
+#profile-details .col:first-child p:first-child
 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    box-shadow: 0 0 15px -5px black !important;
-    background-color: white;
-    margin: 0 0 4vh 0 ;
-    padding: 0 0 5vh 0;
-}
-
-#profile-details .detail-row:nth-child(1) .col p:first-child
-{
-    margin: 5% 0 0 5%;
     color: #41d5a6;
-    align-self: start;
     font-size: 1.5vw;
+    margin: 10px 0 10px 2vw;
 }
-
-#profile-details .detail-row:nth-child(1) .col p:last-child
+#profile-details .col:first-child p:last-child
 {
-    color: rgb(104, 104, 104);
+    color: rgb(99, 99, 99);
+    font-size: 1vw;
+    text-indent: 5vw;
+    padding: 2vw;
     text-align: justify;
-    text-indent: 10%;
-    padding: 20px;
 }
 
-#profile-details .detail-row:last-child
+#profile-details .col:last-child
 {
-    width: 30%;
-    height: 20vh;
-    background-color: gold;
-    margin: 0 0 4vh 0 ;
+    width: 35%;
+    padding: 5vh 0;
+    /* height: auto; */
+    display: flex;
+    justify-content: flex-start !important;
+    align-self: center;
+    flex-direction: column;
+    gap: 10px;
+}
 
+#profile-details .col:last-child .sec-row
+{
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    background-color: white;
+    box-shadow: 0 0 10px black;
 }
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
@@ -60,28 +59,38 @@
 
     #profile-details 
     {
+        width: 100% !important;
         height: auto;
-        padding: 10px !important;
-        padding-bottom: 10vh;
+        padding: 5vh 0 !important;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    #profile-details .detail-row
+    #profile-details .col:first-child
     {
-        /* background-color: gainsboro; */
-        /* height: 50vh; */
-        padding: 0 0 20vw 0 ;
+        width: 90% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
     }
 
-    #profile-details .detail-row .col p:first-child
+    #profile-details .col:last-child
     {
-        color: #41d5a6;
-        font-size: 6vw;
+        width: 0;
     }
 
-    #profile-details .detail-row .col p:last-child
+    #profile-details .col p:first-child
     {
-        color: rgb(104, 104, 104);
+        color: #41d5a6 !important;
+        font-size: 6vw !important;
+    }
+
+    #profile-details .col p:last-child
+    {
+        color: rgb(104, 104, 104) !important;
+        font-size: 3vw !important;
         text-align: justify;
         text-indent: 10%;
         margin: 0 !important;
