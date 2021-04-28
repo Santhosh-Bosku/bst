@@ -125,7 +125,6 @@
 
 .post-footer ul li
 {
-    /* width: 25%; */
     height: 100%;
     float: left;
     margin:  0 1%;
@@ -133,20 +132,11 @@
     align-items: center;
 }
 
-/* .post-footer ul li a
-{
-
-} */
-
 .post-footer ul li a img
 {
     width: 2vw;
 }
 
-.post-footer ul li a img:hover
-{
-    /* fill: red; */
-}
 
 
 @media only screen and (min-width: 170px) and (max-width: 770px)

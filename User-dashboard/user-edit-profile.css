@@ -1,0 +1,71 @@
+
+#profile-edit-profile
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: none !important;
+    padding: 3% 0 3% 0;
+}
+
+#profile-edit-profile .col:first-child
+{
+    width: 65%;
+    /* height: 60vh; */
+    background-color: red;
+}
+
+#profile-edit-profile .col:last-child
+{
+    width: 35%;
+}
+
+#edit-profile
+{
+    width: 100%;
+    height: 100%;
+}
+
+#profile-edit-profile .col:last-child .sec-row
+{
+    width: 80%;
+    height: 60vh;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #profile-edit-profile
+    {
+        width: 100% !important;
+        height: auto;
+        padding: 5vh 0 !important;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-edit-profile .col:first-child
+    {
+        width: 90% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    #profile-edit-profile .col:last-child
+    {
+        width: 0;
+    }
+
+    #edit-profile
+    {
+        width: 100% !important;
+    }
+}
