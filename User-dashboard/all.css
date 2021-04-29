@@ -48,6 +48,11 @@ header ul
     display: none;
 }
 
+.none
+{
+    display: none;
+}
+
 header ul li
 {
     width: 30%;
@@ -101,12 +106,6 @@ header ul li#burger-menu #burger-menu-container label .row
     transition: all 0.3s ease-in-out;
 }
 
-
-
-#logo
-{
-    /* margin: 0 0 0 10vw; */
-}
 
 header ul li#logout a
 {
