@@ -301,6 +301,11 @@ header ul li a img
 
 
 
+#display-container
+{
+    width: 100%;
+    margin: 0 0 0 4vw;
+}
 #profile-container
 {
     width: 100%;

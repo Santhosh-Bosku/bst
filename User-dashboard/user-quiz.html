@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-quiz.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>User-Quiz</title>
+</head>
+<body>
+    <input type="checkbox" id="in1">
+    <header>
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-overview.html">
+                        <img src="images/user.png" alt="profile" >
+                        <p class="show" data-aos="fade-left" class="active">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html"class="active">
+                        <img src="images/icons/puzzle-piece.svg" alt="" class="active">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="mobile-nav" class="mb-view"></div>
+            <div id="display-container">
+                <div id="quiz-menu">
+                    <ul>
+                        <li><a href="user-quiz.html" class="active-a">Daily-Quiz</a></li>
+                        <li><a href="user-quiz-pervious.html">Pervious-quiz</a></li>
+                    </ul>
+                </div>
+                <div id="quiz">
+                    <div class="col">
+                        <h1>Todays Quiz is on <span>Chapter 1</span></h1>
+                        <form action="">
+                            <div id="questions">
+                                <ul>
+                                    <li>
+                                        <label for="">What is your name?</label>
+                                        <input type="text" name="" id="">
+                                    </li>
+                                    <li>
+                                        <label for="">What is your name?</label>
+                                        <input type="text" name="" id="">
+                                    </li>
+                                    <li>
+                                        <label for="">What is your name?</label>
+                                        <input type="text" name="" id="">
+                                    </li>
+                                    <li>
+                                        <label for="">What is your name?</label>
+                                        <input type="text" name="" id="">
+                                    </li>
+                                    <li>
+                                        <label for="">What is your name?</label>
+                                        <input type="text" name="" id="">
+                                    </li>
+                                    <li>
+                                        <label for="">What is your name?</label>
+                                        <input type="text" name="" id="">
+                                    </li>
+                                </ul>
+                                <input type="submit" value="submit">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <input type="file" name="" id="edit-profile-img" class="none">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
+</body>
+</html>
