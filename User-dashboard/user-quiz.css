@@ -147,9 +147,54 @@
 #display-container #quiz .col:last-child
 {
     width: 30%;
-    height: 50vh;
-    background-color: white;
+
+}
+
+#pervious
+{
+    width: 100%;
+    margin: 0 0 5vh 0 ;
     box-shadow: 0 0 15px -5px black;
+    background-color: white;
+}
+
+#pervious ul
+{
+    width: 100%;
+    list-style: none;
+    padding: 5vh 0;
+}
+
+#pervious ul li
+{
+    width: 95%;
+    height: 5vh;
+    text-align: center;
+    margin: 0 auto 1vh auto;
+}
+
+#pervious ul li a:hover
+{
+    background-color: rgb(141, 141, 141);
+
+}
+
+#pervious ul li a
+{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    width: 100% !important;
+    height: 100% !important;
+    text-decoration: none;
+    color: #41d5a6;
+    font-weight: 600;
+    background-color: #ccc;
+}
+
+#pervious ul li a p
+{
+    /* margin: 0 0 0 4vw; */
 }
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
