@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="all.css">
-    <link rel="stylesheet" href="user-edit-profile.css">
+    <link rel="stylesheet" href="user-prayer-request.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
-    <title>User-Edit-Profile</title>
+    <title>User-Prayer-Request</title>
 </head>
 <body>
     <input type="checkbox" id="in1">
@@ -44,9 +44,9 @@
         <div id="menu">
             <ul>
                 <li>
-                    <a href="user-overview.html" class="active">
-                        <img src="images/user.png" alt="profile" class="active">
-                        <p class="show" data-aos="fade-left" class="active">Profile</p>
+                    <a href="user-overview.html" >
+                        <img src="images/user.png" alt="profile" >
+                        <p class="show" data-aos="fade-left" >Profile</p>
                     </a>
                 </li>
                 <li>
@@ -68,14 +68,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="user-prayer-request.html">
-                        <img src="images/icons/prayer.svg" alt="">
-                        <p class="show">Prayer Request</p>
+                    <a href="user-prayer-request.html" class="active">
+                        <img src="images/icons/prayer.svg" alt="" class="active">
+                        <p class="show" class="active">Prayer Request</p>
                     </a>
                 </li>  
                 <li>
                     <a href="">
-                        <img src="images/icons/plus.svg" alt="">
+                        <img src="images/icons/plus.svg" alt=""> 
                         <p class="show">Add Post</p>
                     </a>
                 </li>
@@ -108,42 +108,16 @@
         <div id="container">
             <div id="mobile-nav" class="mb-view"></div>
             <div id="profile-container">
-                <div class="row" id="profile-dashboard">
-                    <div class="col">
-                        <div class="img">
-                            <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="row-sec">
-                            <h1>Michael Pasula</h1>
-                        </div>
-                        <div class="row-sec">
-                            <ul>
-                                <li><a href="user-overview.html" >Overview</a></li>
-                                <li><a href="user-profile.html">Info</a></li>
-                                <li><a href="user-activity.html" >Activity</a></li>
-                                <li><a href="user-timeline.html">Timeline</a></li>
-                                <li><a href="user-edit-profile.html"  class="active-a">Edit Profile</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
                 <div id="profile-edit-profile">
                    <div class="col">
                       <div id="edit-profile">
                             <form action="">
                                 <div class="sec-row">
-                                    <p>Edit profile</p>
+                                    <p>Prayer Request</p>
                                 </div>
                                 <div class="sec-row">
                                     <div class="sec-col">
-                                        <div class="img">
-                                            <label class="edit-profile-img" for="edit-profile-img">
-                                                <img src="images/edit.svg" alt="">
-                                            </label>
-                                            <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="profile-image">
-                                        </div>
+                                        
                                     </div>
                                     <div class="sec-col">
                                         <ul>
@@ -152,31 +126,14 @@
                                                 <input type="text" name="" id="edit-profile-name" placeholder="Santhosh Bosku">
                                             </li>
                                             <li>
-                                                <label for="edit-dob">Date of Birth</label>
-                                                <input type="date" name="" id="edit-dob" value="1998-10-18">
-                                            </li>
-                                            <li>
                                                 <label for="edit-profile-email">E-mail</label>
                                                 <input type="email" name="" id="edit-profile-email" placeholder="santhoshbablu1997@gmail.com">
                                             </li>
                                             <li>
-                                                <label for="edit-profile-number">Contact Number</label>
-                                                <input type="text" name="" id="edit-profile-number" placeholder="0123456789">
-                                            </li>
-                                            <li>
-                                                <label for="edit-profile-address">Address</label>
-                                                <input type="text" name="" id="edit-profile-address" placeholder="2-7-101, Jangaon">
-                                            </li>
-                                            <li>
-                                                <label for="edit-password">Password</label>
-                                                <input type="password" name="" id="edit-password">
-                                            </li>
-                                            <li>
-                                                <label for="edit-confrim-password">Confirm Password</label>
-                                                <input type="password" name="" id="edit-confrim-password">
+                                                <textarea name="" id=""></textarea>
                                             </li>
                                         </ul>
-                                        <input type="submit" value="save">
+                                        <input type="submit" value="Request">
                                     </div>
                                 </div>
                             </form>

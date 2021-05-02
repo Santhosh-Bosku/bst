@@ -58,8 +58,8 @@
 #edit-profile .sec-row .sec-col:first-child
 {
     width: 100%;
-    height: 22vh;
-
+    height: auto;
+    display: none !important;
 }
 
 #edit-profile .sec-row .sec-col:first-child .img
@@ -128,13 +128,21 @@
     color: #41d5a6;
 }
 
-#edit-profile .sec-row .sec-col:nth-child(2) ul li input
+#edit-profile .sec-row .sec-col:nth-child(2) ul li input, textarea
 {
     width: 100%;
     height: 5vh;
     font-size: 1vw;
     text-indent: 1vw;
     color: black;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul li textarea
+{
+    width: 96%;
+    height: 10vh;
+    resize: none;
+    padding: 2%;
 }
 
 #edit-profile .sec-row .sec-col:nth-child(2) ul li input::placeholder
@@ -167,7 +175,7 @@
 #profile-edit-profile .col:last-child .sec-row
 {
     width: 80%;
-    height: 60vh;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 5vh;
     background-color: white;
@@ -180,7 +188,7 @@
     {
         width: 100% !important;
         height: auto;
-        padding: 5vh 0 !important;
+        padding: 0 !important;
         background-color: white;
         display: flex;
         justify-content: center;
@@ -189,7 +197,7 @@
 
     #profile-edit-profile .col:first-child
     {
-        width: 90% !important;
+        width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
 
@@ -203,49 +211,35 @@
     #edit-profile
     {
         width: 100% !important;
+        margin-top: 8vh;
     }
-    #profile-edit-profile .col:first-child
+
+}
+    #edit-profile .sec-row:first-child p
+    {
+        font-size: 6vw;
+        margin: 0 !important;
+    }
+
+    #edit-profile form
     {
         width: 100% !important;
     }
 
-    #edit-profile .sec-row .sec-col:first-child .img
+    #edit-profile .sec-row:last-child
     {
-        width: 40vw;
-        height: 40vw;
-    }
-
-    #edit-profile .sec-row .sec-col:first-child .img .edit-profile-img
-    {
-        width: 8vw;
-        height: 8vw;
-    }
-
-    #edit-profile .sec-row .sec-col:first-child .img .edit-profile-img img
-    {
-        width: 4vw;
-        height: 6vw;
-    }
-
-    #edit-profile .sec-row .sec-col:nth-child(2) ul
-    {
-        width: 100%;
-        list-style: none;
-        text-align: initial;
+        margin: 0 !important;
     }
 
     #edit-profile .sec-row .sec-col:nth-child(2) ul li
     {
-        width: 90%;
-        margin: 6vw auto 0 auto;
+        width: 90% !important;
+        margin: 3vh auto 0 auto;
     }
 
     #edit-profile .sec-row .sec-col:nth-child(2) ul li label
     {
-        display: block;
         font-size: 4vw;
-        margin: 2vw 0;
-        color: #41d5a6;
     }
 
     #edit-profile .sec-row .sec-col:nth-child(2) ul li input
@@ -255,52 +249,17 @@
         font-size: 4vw;
     }
 
-    #edit-profile .sec-row .sec-col:nth-child(2) ul li input::placeholder
+    #edit-profile .sec-row .sec-col:nth-child(2) ul li textarea
     {
-        color: rgb(100, 100, 100);
+        width: 96%;
+        height: 47vw;
+        font-size: 4vw;
     }
 
     #edit-profile .sec-row .sec-col:nth-child(2) input[type="submit"]
     {
-        display: inline-block;
-        margin: 5vh 0 !important;
-        width: 20vw;
-        height: 10vw;
+        width: 30vw;
         font-size: 4vw;
-        background-color: #51bb99;
-        border: none;
-        border-radius: 5px;
-        color: white;
-        transition: all 0.1s ease-in-out;
-        cursor: pointer;
-
+        height: 10vw;
     }
-
-    #edit-profile .sec-row input[type="submit"]:hover
-    {
-        background-color: #41d5a6;
-        transition: all 0.1s ease-in-out;
-    }
-
-    #profile-edit-profile .col:last-child .sec-row
-    {
-        width: 80%;
-        height: 60vh;
-        margin: 0 auto;
-        margin-bottom: 5vh;
-        background-color: white;
-        box-shadow: 0 0 10px black;
-    }
-
-    #edit-profile form
-    {
-        width: 100% !important;
-        box-shadow: none !important;
-    }
- 
-    #edit-profile .sec-row:first-child p  
-    {
-        font-size: 6vw;
-    }  
-
 }

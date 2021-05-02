@@ -78,7 +78,13 @@
         width: 100% !important;
         /* padding:  0 0 5vh 0; */
         /* background-color: white; */
-    }   
+    }  
+    
+    #profile-detials .detail-row:nth-child(1) .col
+    {
+        margin: 0 !important;
+        box-shadow: none !important;
+    }
 
     #profile-detials .detail-row:nth-child(1) .col p
     {
