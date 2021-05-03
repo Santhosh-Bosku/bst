@@ -73,7 +73,6 @@
 #profile-activity .col:last-child
 {
     width: 35%;
-    padding: 5vh 0;
     /* height: auto; */
     gap: 10px;
 }

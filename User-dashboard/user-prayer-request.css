@@ -12,12 +12,13 @@
 
 #profile-edit-profile .col:first-child
 {
-    width: 65%;
+    width: 70%;
 }
 
 #profile-edit-profile .col:last-child
 {
-    width: 35%;
+    width: 0%;
+    display: none;
 }
 
 #edit-profile
@@ -140,7 +141,7 @@
 #edit-profile .sec-row .sec-col:nth-child(2) ul li textarea
 {
     width: 96%;
-    height: 10vh;
+    height: 20vh;
     resize: none;
     padding: 2%;
 }
@@ -214,7 +215,6 @@
         margin-top: 8vh;
     }
 
-}
     #edit-profile .sec-row:first-child p
     {
         font-size: 6vw;

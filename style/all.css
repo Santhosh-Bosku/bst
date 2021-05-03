@@ -35,7 +35,17 @@ header
     justify-content: center;
     align-items: center;
     z-index: 993;
+}
 
+.scrolled
+{
+    background-color: white !important;
+    color: black;
+}
+
+.navscrolled
+{
+    color: black;
 }
 
 #logo a
