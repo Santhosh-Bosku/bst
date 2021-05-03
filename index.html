@@ -6,16 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/all.css">
     <link rel="stylesheet" href="style/index.css">
-    <script src="alpha.js"></script>
-    <!-- <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
-    <!-- <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script> -->
+    <script src="style/script.js"></script>
     <title>Bible Study Team</title>
 </head>
 <body>
     <input type="checkbox" name="burger-menu-checkbox" id="burger-menu-checkbox" class="checkbox-none">
-    <header class="waiting">
+    <header class="waiting" id="header">
         <div id="logo-burger-menu">
-            <div id="logo" class="row"><a href=""><h1>Bible Study Team</h1></a></div>
+            <div id="logo" class="row"><a href=""><h1 id="logoh1">Bible Study Team</h1></a></div>
             <div class="row">
                 <div id="burger-menu">
                 <label for="burger-menu-checkbox">
@@ -28,10 +26,10 @@
         </div>
         <nav>
             <ul id="menu">
-                <li><a href="biographies.html">Bio-Graphies</a></li>
-                <li><a href="prayerrequest.html">Prayer Request</a></li>
-                <li><a href="#dear-beliver">About Us</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="biographies.html" class="nav-a">Bio-Graphies</a></li>
+                <li><a href="prayerrequest.html" class="nav-a">Prayer Request</a></li>
+                <li><a href="#dear-beliver" class="nav-a">About Us</a></li>
+                <li><a href="login.html" class="nav-a">Login</a></li>
             </ul>
             <div id="mobile-copy-credits">
                 <p>&copy; UEYF</p>
@@ -68,5 +66,7 @@
             <p>&copy; UEYF</p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
 </body>
 </html>

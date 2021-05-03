@@ -9,11 +9,6 @@ header{
     background-color: #ccc;
 }
 
-#menu li a:focus
-{
-    color: red;
-}
-
 #biographies-container
 {
     width: 100vw;

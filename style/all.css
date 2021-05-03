@@ -35,12 +35,20 @@ header
     justify-content: center;
     align-items: center;
     z-index: 993;
+    transition: 0.3s ease-in-out;
+
 }
 
 .scrolled
 {
     background-color: white !important;
-    color: black;
+    color: black !important;
+    transition: 0.3s ease-in-out;
+}
+.h1-scrolled
+{
+    color: black !important;
+    transition: 0.3s ease-in-out;
 }
 
 .navscrolled
@@ -254,6 +262,17 @@ div#container
 .checkbox-none
 {
     display: none;
+}
+
+.active
+{
+    border-bottom: 4px solid white;
+    /* filter: invert(0.4) sepia(1) saturate(35) hue-rotate(140.4deg) brightness(1.2); */
+}
+
+.active-black
+{
+    border-bottom: 4px solid black;
 }
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
