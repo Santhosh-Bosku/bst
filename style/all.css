@@ -280,7 +280,7 @@ div#container
     header
     {
         width: 100%;
-        height: 8vh;
+        height: 16vw;
         display: block;
         background-color: white;
     }
@@ -288,7 +288,7 @@ div#container
     #logo-burger-menu
     {
         width: 100vw;
-        height: 8vh;
+        height: 16vw;
     }
 
     #logo-burger-menu .row
@@ -314,7 +314,7 @@ div#container
     {
         margin: 0 0 0 8%;
         color: white !important;
-        font-size: 2vh;
+        font-size: 4VW;
         width: 100%;
     }    
 
@@ -330,8 +330,8 @@ div#container
 
     #burger-menu label .row
     {
-        width: 8vw;
-        height: 0.8vh;
+        width: 8vw !important;
+        height: 1vw;
         display: flex;
         justify-content: center;
         align-items: center;
