@@ -329,7 +329,7 @@
     #display-container #quiz .col:first-child #questions .row ul li input
     {
         width: 100%;
-        height: 5vh;
+        height: 10vw;
         text-indent: 1vw;
     }
     
