@@ -179,6 +179,11 @@
     width: 2vw;
 }
 
+.post-footer ul li a img:hover
+{
+    filter: invert(0.4) sepia(1) saturate(35) hue-rotate(140.4deg) brightness(1.2);
+}
+
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {

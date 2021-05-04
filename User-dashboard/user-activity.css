@@ -104,7 +104,7 @@
 
     #profile-activity .col:first-child
     {
-        width: 90% !important;
+        width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
 
@@ -123,6 +123,8 @@
     #activity ul
     {
         width: 100% !important;
+        background-color: initial !important;
+        box-shadow: none;
     }
 
     #activity ul li
