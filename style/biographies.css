@@ -5,9 +5,7 @@ body
     overflow-x: hidden;
 }
 
-header{
-    background-color: #ccc;
-}
+
 
 #biographies-container
 {
@@ -30,7 +28,6 @@ header{
     min-width: 250px;
     height: 250px;
     /* margin: 10px; */
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,12 +79,48 @@ header{
 
 @media only screen and (min-width: 170px) and (max-width: 770px) 
 {
+    #biographies-container
+    {
+        gap: 3px;
+        padding: 0 0 5vw 0;
+    } 
+
+    #biographies-container div
+    {
+        width: 110%;
+        height: 60vw;
+        display: flex;
+        padding: 0 !important;
+        justify-content: center;
+        align-items: center;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.692)), url("images/pexels-luis-quintero-2014774.jpg");
+        background-size: 100%;
+        margin: 0 0 5vw 0;
+    }
+
+    #biographies-container span
+    {
+        width: 100%;
+        height: 40px;
+        padding: 0 0 0 10px;
+        color: white;
+        margin: 10px 0;
+        background-color: rgb(82, 82, 82);
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+    }
+
     #biographies-container a
     {
         min-width: 350px;
-        height: 50px;
+        height: 30px;
         opacity: 1 !important;
         transform: initial;
+        box-shadow: none !important;
+        background-image: none !important;
+        border-radius: initial;
+        
     }
 
     #biographies-container a img
@@ -97,6 +130,7 @@ header{
     
     #biographies-container a p
     {
+        width: 90%;
         transform: initial;
         height: 100%;
         display: flex;
@@ -105,6 +139,7 @@ header{
         padding: 0;
         background-color: white !important;
         color: black;
+        font-size: 4vw;
     }
 }
 
