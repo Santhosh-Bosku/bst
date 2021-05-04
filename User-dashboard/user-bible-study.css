@@ -270,6 +270,11 @@
         margin: 0 auto 10px auto;
         gap: 3vw !important;
     }
+
+    #questions .row input:first-child
+    {
+        height: 10vw;
+    }
     
     #questions .row form
     {
