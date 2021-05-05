@@ -485,7 +485,7 @@ header ul li a img
 
     header
     {
-        16vw
+        height: 16vw;
     }
 
     header ul li
