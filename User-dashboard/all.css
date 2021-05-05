@@ -119,8 +119,8 @@ header ul li#logout a
 
 header ul li#logout a img
 {
-    transform: rotateZ(-90deg);
-    width: 7vw;
+    transform: rotateZ(-180deg);
+    width: 6vw;
     filter: invert(0.4) sepia(1) saturate(20) hue-rotate(140.4deg) brightness(1.2);
 }
 
@@ -425,6 +425,8 @@ header ul li a img
     color: #41d5a6 !important;
     transition: all 0.3s ease-in;
 }
+
+/****************************************************************  *******************************************************************/
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
