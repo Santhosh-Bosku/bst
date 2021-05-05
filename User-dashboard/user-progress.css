@@ -1,0 +1,19 @@
+#progress-container
+{
+    width: 100%;
+    height: 92vh;
+    padding-left: 4vw;
+    background-color: red;
+}
+
+#progress-container .row
+{
+    background-color: green;
+}
+
+#progress-container .row
+{
+    width: 60%   !important;
+    height: 50vh;
+}
+
