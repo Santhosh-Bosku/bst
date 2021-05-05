@@ -441,7 +441,7 @@ header ul li a img
     {
         width: 100vw !important;
         height: 14vw !important;
-        background-color: rgb(32, 173, 13) !important;
+        background-color: rgb(255, 255, 255) !important;
         position: fixed;
         top: 14vw;
         z-index: 998;
@@ -509,6 +509,11 @@ header ul li a img
     {
         width: 14vw !important;
         max-width: 14vw;
+    }
+
+    header ul li#burger-menu #burger-menu-container label .row
+    {
+        height: 1.3vw;
     }
 
     #body-container
