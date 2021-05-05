@@ -441,7 +441,7 @@ header ul li a img
     {
         width: 100vw !important;
         height: 14vw !important;
-        background-color: rgb(173, 45, 13) !important;
+        background-color: rgb(32, 173, 13) !important;
         position: fixed;
         top: 14vw;
         z-index: 998;
@@ -514,7 +514,7 @@ header ul li a img
     #body-container #menu
     {
         min-width: 80vw;
-        height: 100vh;
+        max-height: 100vh;
         position: fixed;
         background-color: white;
         z-index: 999;
