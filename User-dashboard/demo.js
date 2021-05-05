@@ -18,3 +18,10 @@ function chapterNumber()
     document.getElementById("select2").setAttribute('list',val)
 }
 
+function clicked(clk)
+{
+    // const label = document.this.id;
+    console.log(clk);
+    // alert("label");
+}
+

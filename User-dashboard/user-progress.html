@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="all.css">
     <link rel="stylesheet" href="user-progress.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <title>User-progress</title>
 </head>
 <body>
@@ -141,18 +141,84 @@
                         <a href="">View Missed Quiz's</a>
                     </div>
                     <div class="col" id="bible-study">
-                        <h1>Bible Study</h1>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="" id="chapter">
-                                <label for="chapter">Book Name</label>
-                                <ul class="chapter-num">
-                                    <li>1</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <div class="book">
+                            <h1>Bible Study</h1>
+                            <input type="checkbox" name="" id="chapter" onclick="reply_click(this.id)">
+                            <label for="chapter">Book Name</label>
+                            <div class="chapter-num">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span class="incomplete">5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>9</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <input type="checkbox" name="" id="chapter2" onclick="reply_click(this.id)">
+                            <label for="chapter2">Book Name 2</label>                   
+                            <div class="chapter-num get">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span class="incomplete">5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>9</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                        </div>
+                        <!-- <button id="1" onClick="reply_click(this.id)">B1</button>
+<button id="2" onClick="reply_click(this.id)">B2</button>
+<button id="3" onClick="reply_click(this.id)">B3</button> -->
+    
+<script type="text/javascript">
+  function reply_click(clicked_id)
+  {
+    //   alert(clicked_id);
+    chk = document.querySelector("#clicked_id ~ div");      
+    console.log(chk);
+      console.log(clicked_id);
+      if ( clicked_id.checked = "True")
+      {
+        chk.style.display= "block";
+      }
+      else
+      {
+        chk.style.display= "none";
+      }
+  }
+</script>
                     </div>
                 </div>
                 <div class="row notifi mb-none">
@@ -225,11 +291,11 @@
             </div>
         </div>
     </section>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init( );
         AOS.init({
         });
-    </script>
+    </script> -->
 </body>
 </html>
