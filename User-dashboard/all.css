@@ -441,7 +441,7 @@ header ul li a img
     {
         width: 100vw !important;
         height: 16vw !important;
-        background-color: white !important;
+        background-color: rgb(173, 13, 13) !important;
         position: fixed;
         top: 15vw;
         z-index: 998;
