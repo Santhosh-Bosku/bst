@@ -78,3 +78,25 @@
     color: #41d5a6;
     margin: 0 8px;
 }
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+.chapter-num
+{
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    /* opacity: 0; */
+    background-color: red;
+    list-style: none;
+}
+
+#chapter:checked ~ .chapter-num
+{
+    height: auto;
+    visibility: visible;
+    transition: visibility 0.3s ease-in-out;
+}
