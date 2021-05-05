@@ -1,19 +1,80 @@
 #progress-container
 {
     width: 100%;
-    height: 92vh;
-    padding-left: 4vw;
-    background-color: red;
+    height: auto;
+    padding: 5vh 0 5vh 4vw ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
-#progress-container .row
+#progress-container .row:first-child
 {
     background-color: green;
-}
-
-#progress-container .row
-{
-    width: 60%   !important;
+    width: 60%;
     height: 50vh;
 }
 
+#progress-container .row:nth-child(2)
+{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.notifi div
+{
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    background-color: #ccc;
+    overflow-y: scroll;
+}
+
+.notifi h1
+{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+}
+
+.notifi div ul
+{
+    width: 100%;
+    list-style: none;
+}
+
+.notifi div ul li
+{
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 1px;
+}
+
+.notifi div ul li a
+{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 4%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.notifi div ul li a:hover
+{
+    background-color: rgb(218, 218, 218);
+}
+
+.notifi div ul li a span
+{
+    color: #41d5a6;
+    margin: 0 8px;
+}
