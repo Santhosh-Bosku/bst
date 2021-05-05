@@ -443,7 +443,7 @@ header ul li a img
         height: 16vw !important;
         background-color: white !important;
         position: fixed;
-        top: 8vh;
+        top: 15vw;
         z-index: 998;
     }
 
@@ -502,6 +502,12 @@ header ul li a img
         align-items: center;
         float: right;
         margin: 0 3vw 0 0;
+    }
+
+    
+    header ul li#burger-menu #burger-menu-container
+    {
+        width: 4vw !important;
     }
 
     #body-container #menu
