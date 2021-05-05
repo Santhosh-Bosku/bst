@@ -440,7 +440,7 @@ header ul li a img
     #mobile-nav
     {
         width: 100vw !important;
-        height: 16vw !important;
+        height: 14vw !important;
         background-color: rgb(173, 13, 13) !important;
         position: fixed;
         top: 14vw;
@@ -507,7 +507,8 @@ header ul li a img
     
     header ul li#burger-menu #burger-menu-container
     {
-        width: 4vw !important;
+        width: 14vw !important;
+        max-width: 14vw;
     }
 
     #body-container #menu
