@@ -441,7 +441,7 @@ header ul li a img
     {
         width: 100vw !important;
         height: 14vw !important;
-        background-color: rgb(173, 13, 13) !important;
+        background-color: rgb(173, 45, 13) !important;
         position: fixed;
         top: 14vw;
         z-index: 998;
@@ -549,7 +549,7 @@ header ul li a img
     #menu ul li
     {
         width: 100% !important;
-        height: 7vh;
+        height: 12vw;
         display: flex;
         justify-content: flex-start;
         align-items: center;
