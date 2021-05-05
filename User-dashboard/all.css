@@ -553,6 +553,7 @@ header ul li a img
         overflow-y: scroll !important;
         transition: width 1s ease-in;
         padding: 0 10px ;
+        background-color: red;
     }
 
     #menu ul::-webkit-scrollbar
