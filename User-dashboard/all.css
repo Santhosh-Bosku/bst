@@ -596,7 +596,7 @@ header ul li a img
     .show
     {
         display: block !important;
-        margin: 0 0 0 5vw !important;
+        margin: 0  !important;
     }
 
     #profile-container
