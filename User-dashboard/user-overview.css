@@ -33,6 +33,9 @@
     color: #41d5a6;
     font-size: 1.5vw;
     margin: 5vh 0 10px 2vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 #profile-details .col:first-child div p:last-child
 {
@@ -41,6 +44,20 @@
     text-indent: 5vw;
     padding: 2vw;
     text-align: justify;
+}
+
+#profile-details .col:first-child div p:first-child a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-details .col:first-child div p:first-child a img
+{
+    width: 3vh;
+    margin: 0 2vw;
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(140.4deg) brightness(1.2);
 }
 
 #profile-details .col:last-child
@@ -110,7 +127,14 @@
         font-size: 3vw !important;
         text-align: justify;
         text-indent: 10%;
-        margin: 0 !important;
+        margin: 0 0 4vw 0 !important;
         padding: 0 !important;
     }
+    
+    
+#profile-details .col:first-child div p:first-child a img
+{
+    width: 4vw;
+    margin: 0 2vw;
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(140.4deg) brightness(1.2);
 }
