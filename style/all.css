@@ -408,7 +408,7 @@ div#container
     nav ul li
     {
         width: 100%;
-        height: auto;
+        height: 10vw !important;
         background-color: white;
         margin: 1px 0 0 0;
     }

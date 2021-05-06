@@ -70,9 +70,8 @@ header ul li#burger-menu
 
 header ul li#burger-menu #burger-menu-container
 {
-    width: 10vh;
-    max-width: 4vw;
-    min-width: 8vh;
+    width: 8.4vh;
+    max-width: 9vh;
     height: 100%;
     display: flex;
     align-items: center;
@@ -554,7 +553,7 @@ header ul li a img
         list-style: none;
         overflow-y: scroll !important;
         transition: width 1s ease-in;
-        padding: 0 10px ;
+        /* padding: 0 10px ; */
     }
 
     #menu ul::-webkit-scrollbar
@@ -583,7 +582,7 @@ header ul li a img
         justify-content:flex-start;
         align-items: center;
         text-decoration: none;
-        margin-left: 1vw;
+        padding-left: 1vw;
         transition: width 1s ease-in;
     }
 
@@ -591,7 +590,7 @@ header ul li a img
     {
         width: 100%;
         max-width: 6vw;
-        padding-right: 0 !important;
+        padding: 0  3.5vw!important;
     }
 
     .show

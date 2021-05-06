@@ -199,7 +199,7 @@
         height: 8vh;
         background-color: black;
         position: fixed;
-        top: 8vh;
+        top: 14vw;
         z-index: 998;
     }
 }

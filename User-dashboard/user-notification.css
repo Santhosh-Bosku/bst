@@ -1,0 +1,143 @@
+#progress-container
+{
+    width: 100%;
+    height: auto;
+    padding: 5vh 0 5vh 4vw ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.notifi
+{
+    width: 100%;
+}
+
+.notifi div
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #ccc;
+    /* overflow-y: scroll; */
+}
+
+.notifi h1
+{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.notifi div ul
+{
+    width: 100%;
+    list-style: none;
+}
+
+.notifi div ul li
+{
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 1px;
+}
+
+.notifi div ul li a
+{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 4%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.notifi div ul li a:hover
+{
+    background-color: rgb(218, 218, 218);
+}
+
+.notifi div ul li a span
+{
+    color: #41d5a6;
+    margin: 0 8px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+.chapter-num
+{
+    width: 98%;
+    height: 0;
+    visibility: hidden;
+    /* opacity: 0; */
+    background-color: #ccc;
+    list-style: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 0 10px 0;
+    padding: 3% 1%;
+}
+
+.chapter-num span
+{
+    width: 6%;
+    height: 3vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1vw;
+    color: green;
+}
+
+#chapter:checked ~ .chapter-num
+{
+    height: auto;
+    visibility: visible;
+    transition: visibility 0.3s ease-in-out;
+    display: flex;
+}
+
+.incomplete
+{
+    /* background-color: red !important; */
+    color: red !important;
+}
+
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #progress-container
+    {
+        padding: 14vw 0 0 0 ;
+    }
+
+    .notifi
+    {
+        width: 100%;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .notifi div
+    {
+        width: 100%;
+        height: 100% !important;
+        text-align: center;
+        overflow-y: scroll;
+    }
+
+}
