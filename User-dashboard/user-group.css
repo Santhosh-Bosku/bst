@@ -317,4 +317,65 @@ input[type="checkbox"]
         color: green;
     }
 
+    #group-container
+    {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    #group-container .row:first-child
+    {
+        width: 100%;
+        height: 84vh;
+        margin: 14vw 0 0 0 !important;
+        padding: 0 !important;
+        background-color: white;
+    }
+
+    .group ul
+    {
+        width: 100%;
+        height: 6vh;
+        list-style: none;
+        text-align: right;
+        background-color: #41d5a6;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .group ul li
+    {
+        display: inline-block;
+        width: 20%;
+        height: 100%;
+        margin: 0 !important;
+    }
+
+    .group ul li h1
+    {
+        color: white;
+        font-size: 5vw;
+    }
+
+    .group ul li:first-child
+    {
+        /* float: left; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .group ul li a
+    {
+        width: 100%;
+        height: 92%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: black !important;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 3vw;
+        border-color: black !important;
+    }
 }
