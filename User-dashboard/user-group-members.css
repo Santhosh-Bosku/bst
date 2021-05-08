@@ -63,10 +63,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #000000 !important;
+    color: black !important;
     font-weight: 600;
     text-decoration: none;
-    border-color: #000000 !important;
+    border-color: black !important;
 }
 
 .group ul li a:hover
@@ -208,6 +208,12 @@ input[type="checkbox"]
 {
     /* background-color: red !important; */
     color: red !important;
+}
+
+.group-body .row
+{
+    width: 100% !important;
+    height: auto !important;
 }
 
 .group-body 
@@ -442,6 +448,11 @@ input[type="checkbox"]
         border-color: #41d5a6 !important;
     }
 
+    .group-body div a
+    {
+        font-size: 2vw;
+    }
+
     .group-body 
     {
         margin: 5px 0 0 0 ;
@@ -476,8 +487,7 @@ input[type="checkbox"]
         display: inline-block;
         font-size: 3vw;
         color: #000000;
-        width: 75%;
-        margin-left: 5%;
+        width: 80%;
     }
 
     .group-body .submitted p span{

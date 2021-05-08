@@ -226,7 +226,7 @@ input[type="checkbox"]
     background-color: #e2e2e2;
 }
 
-.group-body .submitted a
+.group-body .submitted span
 {
     width: 20% !important;
     all: initial;
@@ -237,8 +237,6 @@ input[type="checkbox"]
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
-
 }
 
 .group-body .submitted p{
@@ -257,6 +255,8 @@ input[type="checkbox"]
 {
     font-weight: 600;
 }
+
+
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
@@ -380,11 +380,6 @@ input[type="checkbox"]
         background-color: white;
     }
 
-    .group
-    {
-        /* background-color: #41d5a6; */
-    }
-
     .group ul
     {
         width: 100%;
@@ -476,8 +471,7 @@ input[type="checkbox"]
         display: inline-block;
         font-size: 3vw;
         color: #000000;
-        width: 75%;
-        margin-left: 5%;
+        width: 80%;
     }
 
     .group-body .submitted p span{

@@ -226,6 +226,10 @@ input[type="checkbox"]
     background-color: #e2e2e2;
 }
 
+.group-body .submitted p{
+    margin: 0 0 0 10px ;
+}
+
 .group-body .submitted a
 {
     width: 20% !important;
@@ -238,7 +242,6 @@ input[type="checkbox"]
     justify-content: center;
     align-items: center;
     cursor: pointer;
-
 }
 
 .group-body .submitted p{
