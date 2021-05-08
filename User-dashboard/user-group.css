@@ -63,9 +63,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: black !important;
     font-weight: 600;
     text-decoration: none;
+    border-color: black !important;
 }
 
 .group ul li a:hover
@@ -209,6 +210,22 @@ input[type="checkbox"]
     color: red !important;
 }
 
+.group-body div a
+{
+    font-size: 1.3vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 0 1px 0;
+    background-color: rgb(230, 230, 230);
+}
+
+.group-body div a span
+{
+    margin: 0 10px;
+}
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
@@ -326,10 +343,15 @@ input[type="checkbox"]
     #group-container .row:first-child
     {
         width: 100%;
-        height: 84vh;
-        margin: 14vw 0 0 0 !important;
+        height: 92vh;
+        margin: 0 !important;
         padding: 0 !important;
         background-color: white;
+    }
+
+    .group
+    {
+        /* background-color: #41d5a6; */
     }
 
     .group ul
@@ -338,7 +360,7 @@ input[type="checkbox"]
         height: 6vh;
         list-style: none;
         text-align: right;
-        background-color: #41d5a6;
+        background-color: white;
         display: flex;
         justify-content: space-between;
     }
@@ -353,8 +375,18 @@ input[type="checkbox"]
 
     .group ul li h1
     {
+        float: left;
+    }
+
+    .group h1
+    {
         color: white;
-        font-size: 5vw;
+        font-size: 7vw;
+        width: 100%;
+        padding: 5px 0 !important;
+        background-color: #8a8a8a;
+        text-align: center;
+        display: block;
     }
 
     .group ul li:first-child
@@ -378,4 +410,10 @@ input[type="checkbox"]
         font-size: 3vw;
         border-color: black !important;
     }
+
+    .group-body div a
+    {
+        font-size: 3vw;
+    }
+
 }
