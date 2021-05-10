@@ -55,7 +55,6 @@
 
 #progress-container .row .col#group p span
 {
-    background-color: #ccc;
     padding: 5px;
     color: white;
 }
@@ -263,7 +262,6 @@ input[type="checkbox"]
 
     #progress-container .row .col#group p span
     {
-        background-color: #ccc;
         padding: 5px;
         color: #41d5a6;
     }

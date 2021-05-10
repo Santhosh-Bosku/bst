@@ -7,7 +7,13 @@
 
 header h1, a
 {
-    color: black;
+    color: #41d5a6 !important;
+    border-color: #41d5a6 !important;
+}
+
+header a
+{
+    padding-bottom: 10px;
 }
 
 #container
@@ -45,7 +51,7 @@ header h1, a
 #login-form div h1
 {
     font-size: 2vw;
-    /* color: #ccc; */
+    color: #41d5a6;
 }
 
 #login-form div form
@@ -182,7 +188,7 @@ header h1, a
     {
         width: 80vw;
         height: 10vw;
-        background-color: black;
+        background-color: #41d5a6;
         color: white;
         border: none;
         font-size: 2vh;

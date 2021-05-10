@@ -427,6 +427,62 @@ header ul li a img
     transition: all 0.3s ease-in;
 }
 
+.notifi div
+{
+    width: 100%;
+    height: 66vh;
+    text-align: center;
+    background-color: #ccc;
+    overflow-y: scroll;
+}
+
+.notifi h1
+{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    background-color: #41d5a6;
+    color: white;
+    text-align: center;
+}
+
+.notifi div ul
+{
+    width: 100%;
+    list-style: none;
+}
+
+.notifi div ul li
+{
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 1px;
+}
+
+.notifi div ul li a
+{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 4%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.notifi div ul li a:hover
+{
+    background-color: rgb(218, 218, 218);
+}
+
+.notifi div ul li a span
+{
+    color: #41d5a6;
+    margin: 0 8px;
+}
+
 /****************************************************************  *******************************************************************/
 
 @media only screen and (min-width: 170px) and (max-width: 770px)

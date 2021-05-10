@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: flex-start;
     background-image: none !important;
-    padding: 3% 0 3% 0;
+    padding: 2% 0 0 0;
 }
 
 #profile-edit-profile .col:first-child
@@ -229,6 +229,7 @@
     #edit-profile .sec-row:last-child
     {
         margin: 0 !important;
+        padding: 0 !important;
     }
 
     #edit-profile .sec-row .sec-col:nth-child(2) ul li

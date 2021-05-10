@@ -5,7 +5,7 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-image: none !important;
     padding: 3% 0 3% 0;
@@ -67,19 +67,17 @@
     /* height: auto; */
     display: flex;
     justify-content: flex-start !important;
-    align-self: flex-start;
-    flex-direction: column;
-    gap: 10px;
+    align-self: flex-start !important;
+    /* flex-direction: column; */
 }
 
 #profile-details .col:last-child .sec-row
 {
     width: 80%;
-    height: 60vh;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 5vh;
     background-color: white;
-    box-shadow: 0 0 10px black;
 }
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
