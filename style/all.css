@@ -113,6 +113,7 @@ nav ul li a
 {
     color: white;
     text-decoration: none;
+    border: none;
 }
 
 div#container
@@ -272,11 +273,16 @@ div#container
 
 .active-black
 {
-    border-bottom: 4px solid black;
+    /* text-shadow: 0 0 5px #41d5a6; */
 }
 .bg-black
 {
     background-color: #41d5a6 !important;
+}
+
+.mb-view
+{
+    display: none;
 }
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
@@ -287,6 +293,11 @@ div#container
         height: 16vw;
         display: block;
         background-color: white;
+    }
+
+    header h1, .active
+    {
+        color: #41d5a6 !important;
     }
 
     #logo-burger-menu

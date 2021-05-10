@@ -1,0 +1,232 @@
+#progress-container
+{
+    width: 100%;
+    height: auto;
+    padding: 5vh 0 5vh 4vw ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#progress-container .row
+{
+    width: 94%;
+    height: 82vh;
+    background-color: white;
+    display: flex;
+}
+
+
+#progress-container .row .col:first-child
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-right: 1px solid black;
+    
+}
+
+#progress-container .row .col:last-child
+{
+    width: 80%;
+    height: 55%;
+    text-align: center;
+    padding: 15% 0 0 0;
+    /* background-color: red; */
+}
+
+#progress-container .row .col:first-child a
+{
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    padding: 1vh 0;
+    margin-bottom: 1px;
+    color: black;
+    border: none;
+}
+
+#progress-container .row .col:first-child p
+{
+    position: absolute;
+    bottom: 2vh;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color: #41d5a6;
+}
+
+#progress-container .row .col:first-child p span
+{
+    display: block;
+    font-size: 1.7vh;
+    font-weight: initial;
+    color: black;
+}
+
+#progress-container .row .col:first-child p span a
+{
+    background-color: initial;
+    padding: 0;
+    color: black;
+}
+
+/* #progress-container .row .col:last-child form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#progress-container .row .col:last-child form input
+{
+    width: 30%;
+    height: 5vh;
+    border: none;
+    background-color: #ccc;
+    text-align: center;
+    display: block;
+    margin: 0 auto 3vh auto;
+}
+
+#progress-container .row .col:last-child form p
+{
+    width: 30%;
+    height: 5vh;
+    border: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto 0 auto;
+    font-size: 1.5vh;
+}
+
+#progress-container .row .col:last-child form div label
+{
+    padding:0 2vw !important;
+    color: #41d5a6;
+}
+
+#progress-container .row .col:last-child input[type="checkbox"]
+{
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: #5fd3ae;
+    color: white;
+    font-size: 2vh;
+    margin: 0 auto 3vh auto;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+#progress-container .row .col:last-child input[type="submit"]
+{
+    display: block;
+    background-color: #5fd3ae;
+    color: white;
+    font-size: 2vh;
+    margin: 3vh  auto 0 auto;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#progress-container .row .col:last-child input[type="submit"]:hover
+{
+    background-color: #41d5a6;
+}
+
+
+.active-a
+{
+    color: #41d5a6;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #progress-container
+    {
+        margin: 14vw 0 0 0;
+        padding: 0;
+    }
+
+    #progress-container .row
+    {
+        width: 100%;
+        height: 84vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #progress-container .row .col:first-child
+    {
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #ccc;
+    }
+
+    #progress-container .row .col:first-child a
+    {
+        display: inline-block;
+        width: auto;
+        font-size: 3vw;
+        padding: 0 1.1vw;
+    }
+
+    #progress-container .row .col:last-child
+    {
+        width: 100%;
+    }
+  
+    #progress-container .row .col:last-child input
+    {
+        width: 80% !important;
+        font-size: 4vw;
+        height: 10vw !important;
+        margin: 0 auto 6vw auto !important;
+    }
+
+    #progress-container .row .col:last-child input[type="submit"]
+    {
+        width: 80% !important;
+        font-size: 4vw;
+        height: 10vw !important;
+        margin: 0 auto 6vw auto !important;
+    }
+
+    #progress-container .row .col:last-child input[type="checkbox"]
+    {
+        display: inline-block;
+        width: 4vw !important;
+        height: 4vw !important;
+        background-color: #5fd3ae;
+        color: white;
+        font-size: 2vh;
+        margin: 0 auto 6vw auto !important;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    #progress-container .row .col:last-child textarea
+    {
+        width: 80% !important;
+        font-size: 4vw;
+        height: 50vw !important;
+    }
+
+    #progress-container .row .col:last-child form p
+    {
+        width: 80% !important;
+        font-size: 3vw !important;
+    }
+  
+
+}

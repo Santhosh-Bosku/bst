@@ -5,15 +5,20 @@ body
     overflow-x: hidden;
 }
 
+header
+{
+    background-color: white;
+}
+
 header h1, a
 {
-    color: #41d5a6 !important;
+    color: black;
     border-color: #41d5a6 !important;
 }
 
 header a
 {
-    padding-bottom: 10px;
+    /* font-weight: 600; */
 }
 
 
