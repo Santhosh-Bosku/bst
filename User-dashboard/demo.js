@@ -25,4 +25,8 @@ function clicked(clk)
     // alert("label");
 }
 
+function show()
+{
+    document.querySelector('#setting menu')
+}
 
