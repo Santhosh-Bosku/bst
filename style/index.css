@@ -1,3 +1,7 @@
+header h1, a{
+    color: white;
+}
+
 #tagline
 {
     color: white;
@@ -72,6 +76,7 @@ footer #dear-beliver .five
     header h1{
         color: white !important;
     }
+    
     div#container
     {
         /* background-image: url("images/remi-thorel-DgUD5P1a2Hc-unsplash.jpg"); */
