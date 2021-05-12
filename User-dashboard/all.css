@@ -492,6 +492,12 @@ header ul li a img
         display: inline-block !important;
 
     }
+
+    html
+    {
+        background-color: white !important;
+    }
+    
     #mobile-nav
     {
         width: 100vw !important;
@@ -574,6 +580,7 @@ header ul li a img
     #body-container
     {
         padding-top: 14vw;
+        background-color: white !important;
     }
 
     #body-container #menu
@@ -750,10 +757,5 @@ header ul li a img
         font-weight: 600;
         font-size: 4vw;
         margin: 0 !important;
-    }
-
-    .active-a
-    {
-        background-color: white;
     }
 }
