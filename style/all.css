@@ -111,7 +111,6 @@ nav ul li
 
 nav ul li a
 {
-    color: white;
     text-decoration: none;
     border: none;
 }
@@ -271,10 +270,6 @@ div#container
     /* filter: invert(0.4) sepia(1) saturate(35) hue-rotate(140.4deg) brightness(1.2); */
 }
 
-.active-black
-{
-    /* text-shadow: 0 0 5px #41d5a6; */
-}
 .bg-black
 {
     background-color: #41d5a6 !important;
@@ -295,7 +290,7 @@ div#container
         background-color: white;
     }
 
-    header h1, .active
+    header h1
     {
         color: #41d5a6 !important;
     }
@@ -435,7 +430,7 @@ div#container
         color: black;
         border: none !important;
         font-size: 4vw;
-        color: #41d5a6;
+        color: #41d5a6 !important;
     }
 
     div#container

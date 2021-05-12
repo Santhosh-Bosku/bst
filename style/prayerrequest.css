@@ -8,12 +8,6 @@
 header h1, a
 {
     color: black;
-    border: none !important;
-}
-
-header a
-{
-    /* padding-bottom: 10px; */
 }
 
 #container

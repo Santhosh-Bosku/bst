@@ -9,6 +9,11 @@ header{
     background-color: #63a6ff;
 }
 
+nav ul li a
+{
+    color: black;
+}
+
 #biographies-container
 {
     width: 100vw;

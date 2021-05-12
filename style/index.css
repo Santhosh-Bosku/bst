@@ -67,6 +67,11 @@ footer #dear-beliver .five
 
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
+
+
+    header h1{
+        color: white !important;
+    }
     div#container
     {
         /* background-image: url("images/remi-thorel-DgUD5P1a2Hc-unsplash.jpg"); */
