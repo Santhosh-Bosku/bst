@@ -1,8 +1,7 @@
-body
+
+html
 {
-    background-image: initial;
-    background-color: #ccc !important;
-    overflow-x: hidden;
+    background-color: white !important;
 }
 
 header
@@ -15,68 +14,141 @@ header h1, a
     color: black;
 }
 
-header a
-{
-    /* font-weight: 600; */
-}
-
-
 #biographies-container
 {
     width: 100vw;
     height: auto;
     margin: 8vh 0 0 0;
-    padding: 20px;
-    background-color: #ccc;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
+    position: relative;
     /* overflow-x: hidden !important; */
 }
 
-#biographies-container a
+#biographies-container .col
 {
-    width: 18%;
-    min-width: 250px;
-    height: 250px;
-    /* margin: 10px; */
+    width: 100%;
+    height: auto;
+    margin: 0 0 5vh 0 !important;
+}
+
+#biographies-container .search
+{
+    height: 20vh;
+    position: fixed;
+    top: 8vh;
+    left: 0;
+    z-index: 990;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
+    flex-direction: column;
+    margin: 0 !important;
 }
 
-#biographies-container a:hover
+#biographies-container .search h1
 {
-    box-shadow: 0 0 10px black;
+    margin: 10px;
+    color: black ;
+}
+
+#biographies-container .search input
+{
+    width: 40%;
+    height: 5vh;
+    outline: none;
+    margin: 3vh 0;
+    letter-spacing: 2px;
+    text-indent: 2vw;
+    font-size: 1vw;
+    font-weight: ;
+}
+
+#biographies-container .search datalist
+{
+    width: 100%;
+}
+
+#biographies-container .english, .telugu
+{
+    padding: 20vh 0 0 0 !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#biographies-container .telugu
+{
+    padding: 0 0 4.5vh 0 !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#biographies-container .col span
+{
+    width: 100%;
+    height: 6vh;
+    background-color: #41d5a6 ;
+    margin: 0 !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+     margin:  0 0 3vh 0 !important;
+}
+
+
+#biographies-container .col a
+{
+    display: flex;
+    width: 18%;
+    height: 30vh !important;
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+#biographies-container .col a:hover
+{
+    box-shadow: 0 0 10px -5px black;
     transition: all ease-out 0.3s;
 }
 
-#biographies-container a:hover img
+#biographies-container .col a:hover img
 {
     width: 110%;
-    height: 110%;
+    /* height: 110%; */
     transition:all ease-in-out 0.5s;
 }
 
-#biographies-container a:hover>p
+#biographies-container .col a:hover>p
 {
     transform: translateY(0%);
     transition: all 0.2s ease-in-out;
 }
 
-#biographies-container a img
+#biographies-container .col a img
 {
     width: 100%;
     height: 100%;
     transition:all ease-in-out 0.5s;
 }
 
-#biographies-container a p
+#biographies-container .col a p
 {
     position: absolute;
     bottom: 0;
@@ -91,6 +163,14 @@ header a
     transition: all 0.2s ease-in-out;
 }
 
+
+#biographies-container .telugu
+{
+    margin: 0 0 5vh 0;
+}
+
+
+
 @media only screen and (min-width: 170px) and (max-width: 770px) 
 {
 
@@ -100,9 +180,9 @@ header a
         padding: 0 0 5vw 0;
     } 
 
-    #biographies-container div
+    #biographies-container .search
     {
-        width: 110%;
+        width: 100%;
         height: 60vw;
         display: flex;
         padding: 0 !important;
@@ -111,25 +191,53 @@ header a
         background-image:linear-gradient(rgba(0, 0, 0, 0.541),rgba(0, 0, 0, 0.692)), url("images/pexels-luis-quintero-2014774.jpg");
         background-size: 100%;
         margin: 0 0 5vw 0;
+        color: white;
+        position: initial;
     }
 
-    #biographies-container span
+    #biographies-container .search h1
+    {
+        color: white !important;
+    }
+
+    #biographies-container .search input
+    {
+        width: 80%;
+        height: 10vw;
+        font-size: 3vw;
+    }
+
+    #biographies-container .english
+    {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #biographies-container .telugu
+    {
+        margin:10vw 0 0 0 !important;
+        padding: 0 !important;
+        gap: 5px !important;
+    }
+
+    #biographies-container .col span
     {
         width: 100%;
         height: 40px;
         padding: 0 0 0 10px;
         color: white;
         margin: 10px 0;
-        background-color: rgb(82, 82, 82);
+        background-color: #41d5a6;
         display: flex;
         justify-content:flex-start;
         align-items: center;
+        font-size: 3vw;
     }
 
-    #biographies-container a
+    #biographies-container .col a
     {
-        min-width: 350px;
-        height: 30px;
+        min-width: 350px !important;
+        height: 30px !important;
         opacity: 1 !important;
         transform: initial;
         box-shadow: none !important;
@@ -138,22 +246,24 @@ header a
         
     }
 
-    #biographies-container a img
+    #biographies-container .col a img
     {
         display: none;
     } 
     
-    #biographies-container a p
+    #biographies-container .col a p
     {
-        width: 90%;
+        width: 100%;
+        height: 7vw;
         transform: initial;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 0;
-        background-color: white !important;
-        color: black;
+        margin: 0 !important;
+        background-color: rgba(0, 0, 0, 0.274) !important;
+        color: white;
         font-size: 4vw;
     }
 }

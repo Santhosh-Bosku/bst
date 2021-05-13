@@ -170,16 +170,23 @@
             document.querySelector('#content').insertAdjacentHTML(
                 'beforeend',
                 `<div class="row">
-                <input type="text" name="Ques" value="" id="box" class="something" placeholder="Type here"/>
+                    <div class="col">
+                        <input type="text" name="Ques" value="" id="box" class="question" placeholder="Question"/>
+                        <input type="text" name="ans" value="" id="box" class="answer" placeholder="Answer"/>
+                    </div>
                 <input type="button" value="" onclick="removeRow(this)">
                 </div>`      
             )
-            var list = document.getElementsByClassName("something");
+            var list = document.getElementsByClassName("question");
             for (var i = 0; i < list.length; i++) {
-            list[i].setAttribute("name", "Ques" + i);
+            list[i].setAttribute("name", "ques" + i);
+            }
+            var list = document.getElementsByClassName("answer");
+            for (var i = 0; i < list.length; i++) {
+            list[i].setAttribute("name", "ans" + i);
             }
             
-            document.getElementsByClassName("row").style.counterIncrement = "subsection";
+            // document.getElementsByClassName("row").style.counterIncrement = "subsection";
         }
 
         function removeRow (input) {

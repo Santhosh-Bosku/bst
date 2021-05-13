@@ -9,6 +9,11 @@ header{
     background-color: #63a6ff;
 }
 
+header h1, a
+{
+    color: white !important;
+}
+
 nav ul li a
 {
     color: black;

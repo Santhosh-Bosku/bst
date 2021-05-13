@@ -9,6 +9,11 @@ header
     background-color: #ccc;
 }
 
+header h1, a
+{
+    color: white;
+}
+
 #biographies-container
 {
     margin: 8vh 0 0 0 ;
@@ -27,10 +32,7 @@ header
     align-items: center;
     flex-direction: column;
 }
-#biographies-container div h1
-{
-    /* color: red; */
-}
+
 
 #biographies-container div:nth-child(1) div
 {
@@ -50,12 +52,29 @@ header
     width: 30vw;
     height: 80vh;
     justify-content: flex-start;
+    background-color:white;
+    padding-bottom: 1vh;
 }
 
 #biographies-container div:last-child h1
 {
     width: 100%;
     height: 7%;
+    background-color: #41d5a6 ;
+    color: white;
+    font-size: 1.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#biographies-container div:last-child input
+{
+    width: 95%;
+    margin: 3vh 0;
+    height: 5vh;
+    letter-spacing: 2px;
+    text-indent: 1vw;
 }
 
 
@@ -63,27 +82,27 @@ header
 {
     width: 100%;
     height: 93%;
-    background-color: gainsboro;
+    background-color: white;
     overflow-y: scroll;
+    text-align: center;
 }
 
 #biographies-container div:last-child ul li
 {
-    width: 100%;
-    height: 5vh;
+    width: 98%;
+    height: 5vh !important;
     background-color: white;
-    border-bottom: 1px  solid #ccc;
+    margin: 0 auto 2px auto;
 }
 
 #biographies-container div:last-child ul li a
 {
     width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: black;
+    color: #41d5a6;
 }
 
 #biographies-container div:last-child ul::-webkit-scrollbar
