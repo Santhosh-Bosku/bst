@@ -177,16 +177,15 @@
                 <input type="button" value="" onclick="removeRow(this)">
                 </div>`      
             )
-            var list = document.getElementsByClassName("question");
+            var list = document.querySelectorAll(".question");
             for (var i = 0; i < list.length; i++) {
             list[i].setAttribute("name", "ques" + i);
             }
-            var list = document.getElementsByClassName("answer");
+            var list = document.querySelectorAll(".answer");
             for (var i = 0; i < list.length; i++) {
             list[i].setAttribute("name", "ans" + i);
             }
             
-            // document.getElementsByClassName("row").style.counterIncrement = "subsection";
         }
 
         function removeRow (input) {

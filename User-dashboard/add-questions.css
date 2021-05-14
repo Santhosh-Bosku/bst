@@ -11,6 +11,7 @@
 .add-questions
 {
     width: 95%;
+    min-height: 82vh;
     height: auto;
     margin: 5vh 0 5vh 0;
     background-color: white;

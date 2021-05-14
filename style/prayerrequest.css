@@ -45,7 +45,7 @@ header h1, a
 #login-form div h1
 {
     font-size: 2vw;
-    color: #41d5a6;
+    color: black;
 }
 
 #login-form div form
@@ -128,6 +128,11 @@ header h1, a
 @media only screen and (min-width: 170px) and (max-width: 770px)
 {
 
+    header h1
+    {
+        color: black !important;
+    }
+
     #login-form
     {
         background-image: none;
@@ -182,7 +187,7 @@ header h1, a
     {
         width: 80vw;
         height: 10vw;
-        background-color: #41d5a6;
+        background-color: black;
         color: white;
         border: none;
         font-size: 2vh;

@@ -39,6 +39,10 @@ header
 
 }
 
+header h1{
+    color: white !important;
+}
+
 .scrolled
 {
     background-color: white !important;
@@ -47,13 +51,13 @@ header
 }
 .h1-scrolled
 {
-    color: #41d5a6 !important;
+    color: black !important;
     transition: 0.3s ease-in-out;
 }
 
 .navscrolled
 {
-    color: black;
+    color: black !important;
 }
 
 #logo a
@@ -105,7 +109,7 @@ nav ul li
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 5%;
+   margin: 0 0 0 5%;
 }
 
 nav ul li a
@@ -129,6 +133,11 @@ div#container
     margin-top: 16vh;
     text-align: center;
     z-index: 990;
+}
+
+.margin-zero
+{
+    margin: 2vw 0 !important;
 }
 
 *, *:before, *:after {
@@ -271,7 +280,7 @@ div#container
 
 .bg-black
 {
-    background-color: #41d5a6 !important;
+    background-color: black !important;
 }
 
 .mb-view
@@ -289,10 +298,6 @@ div#container
         background-color: white;
     }
 
-    header h1
-    {
-        color: #41d5a6 !important;
-    }
 
     #logo-burger-menu
     {
@@ -322,7 +327,6 @@ div#container
     #logo a h1
     {
         margin: 0 0 0 8%;
-        color: #41d5a6;
         font-size: 4VW;
         width: 100%;
     }    
@@ -345,7 +349,7 @@ div#container
         justify-content: center;
         align-items: center;
         margin: 9% 0 0 0;
-        background-color: #41d5a6;
+        background-color: black;
         /* border-radius: 20%; */
         transition: all 0.3s ease-in-out;
 
@@ -354,12 +358,13 @@ div#container
     nav
     {
         position: absolute;
-        top: 0;
+        top: 16vw;
         width: 100vw;
-        height: 100vh;
-        background-color: rgb(224, 224, 224);
+        height: 91vh;
+        background-color: white;
         z-index: 998;
-        padding: 0;
+        padding: 0 !important;
+        margin: 0 !important;
         transform: translateX(100%);
         transition: all ease-in-out 0.5s;
     }
@@ -378,18 +383,29 @@ div#container
     {
         transform: translateX(0);
     }
+    #burger-menu-checkbox:checked ~ header
+    {
+        background-color: white !important;
+    }
+
+    #burger-menu-checkbox:checked ~ header h1,a
+    {
+        color: black !important;
+    }
 
     #burger-menu-checkbox:checked ~ header #logo-burger-menu .row #burger-menu .one
     {
         top: 2.5vw;
         transform: rotate(45deg);
         transition: all 0.3s ease-in-out;
+        background-color: black;
     }
     #burger-menu-checkbox:checked ~ header #logo-burger-menu .row #burger-menu .two
     {
         top: 0.2vw;
         transform: rotate(-45deg);
         transition: all 0.3s ease-in-out;
+        background-color: black;
     }
     #burger-menu-checkbox:checked ~ header #logo-burger-menu .row #burger-menu .three
     {
@@ -406,8 +422,8 @@ div#container
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        margin-top: 16vw;
         overflow-y: scroll;
+        background-color: #ccc;
     }
 
     nav ul li
@@ -429,7 +445,7 @@ div#container
         color: black;
         border: none !important;
         font-size: 4vw;
-        color: #41d5a6 !important;
+        color: black!important;
     }
 
     div#container

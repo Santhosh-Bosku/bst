@@ -147,7 +147,7 @@ header h1, a
     #login-form div h1
     {
         font-size: 3vh;
-        color: #41d5a6;
+        color: black;
     }
 
     #login-form div form
@@ -176,7 +176,7 @@ header h1, a
     {
         width: 80vw;
         height: 6vh;
-        background-color: #41d5a6;
+        background-color: black;
         color: white;
         border: none;
         font-size: 2vh;

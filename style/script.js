@@ -1,6 +1,12 @@
 header = document.querySelector('header');
 header = document.querySelector('header');
-window.onscroll = function scrolled()
+window.onscroll =function scrolled()
+{
+    scrolledOne();
+    scrolledTwo();
+}
+
+function scrolledOne()
 {
     if(window.scrollY >= 50)
     {

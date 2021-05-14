@@ -4,14 +4,11 @@
     padding: 0;
     scroll-behavior: smooth; 
 }
-header h1, a
-{
-    color: black;
-}
 
-header a
-{
-    padding-bottom: 10px;
+
+#logo a h1{
+    color: black !important;
+
 }
 
 #container
@@ -49,7 +46,7 @@ header a
 #login-form div h1
 {
     font-size: 2vw;
-    color: #41d5a6;
+    color: black;
 }
 
 #login-form div form
@@ -174,7 +171,7 @@ header a
     {
         width: 80vw;
         height: 10vw;
-        background-color: #41d5a6;
+        background-color: black;
         color: white;
         border: none;
         font-size: 2vh;
