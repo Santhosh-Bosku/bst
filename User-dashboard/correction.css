@@ -12,7 +12,7 @@
 {
     width: 70%;
     height: 92vh;
-    background-color: red;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -45,12 +45,13 @@
     background-color: #41d5a6;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
 #data-container .row-1 .details ul li
 {
+    width: 33%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -68,13 +69,32 @@
 #data-container .row-1 ul li:nth-child(2)
 {
     font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
 }
 
-#data-container .row-1 .details ul li:first-child p
+#data-container .row-1 ul li:nth-child(3)
 {
-    margin: 0 4vw;
+    font-weight: 600;
+    display: flex;
+    /* justify-content: space-evenly; */
 }
 
+#data-container .row-1 ul li:nth-child(3) span
+{
+    font-size: 1vw;
+    margin: 0 2vw;
+}
+
+#data-container .row-1 ul li:nth-child(3) input
+{
+    width: 15vh;
+    height: 5vh;
+    background-color: white;
+    border: none;
+    color: #41d5a6;
+    font-size: 1vw;
+}
 
 #data-container .row-1 .details ul li a
 {
@@ -82,7 +102,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 0 4vw;
     text-decoration: none;
     color: black;
     font-size: 1vw;
@@ -110,14 +129,15 @@
 #data-container .row-1 .answers
 {
     /* height: 6vh; */
-    background-color: rgb(40, 148, 73);
+    padding: 5vh 0 0 0;
+    height: 81vh;
+    overflow-y: scroll;
 }
 
 #data-container .row-1 .answers .q-a
 {
     width: 100%;
     height: auto;
-    background-color: rgb(148, 40, 143);
     display: flex;
     justify-content: center;
     align-items: center;

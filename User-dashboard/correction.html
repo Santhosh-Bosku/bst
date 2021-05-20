@@ -151,20 +151,77 @@
                         <div class="col details">
                             <ul>
                                 <li>
-                                    <p>2-21-2020</p>
-                                </li>
-                                <li>Roman 2</li>
-                                <li>
                                     <a href="">
-                                        <p>santhosh</p>
                                         <div class="img">
                                             <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
                                         </div>
+                                        <p>santhosh</p>
                                     </a>
+                                </li>
+                                <li>
+                                    <p>Roman 2</p>
+                                    <br>
+                                    <p style="font-size: 1.1vw; margin: 0 10px;">2-21-2020</p>
+                                </li>
+                                <li>
+                                    <span>
+                                        5/10
+                                    </span>
+                                    <input type="button" value="upload">
                                 </li>
                             </ul>
                         </div>
                         <div class="col answers">
+                            <div class="q-a">
+                                <p>question Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente?</p>
+                                <p>answer Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <input type="checkbox" name="" id="ans1">
+                                    <label for="ans1">
+                                        User Answer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="q-a">
+                                <p>question Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente?</p>
+                                <p>answer Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <input type="checkbox" name="" id="ans1">
+                                    <label for="ans1">
+                                        User Answer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="q-a">
+                                <p>question Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente?</p>
+                                <p>answer Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <input type="checkbox" name="" id="ans1">
+                                    <label for="ans1">
+                                        User Answer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="q-a">
+                                <p>question Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente?</p>
+                                <p>answer Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <input type="checkbox" name="" id="ans1">
+                                    <label for="ans1">
+                                        User Answer
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="q-a">
+                                <p>question Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente?</p>
+                                <p>answer Lorem ipsum dolor sit amet.</p>
+                                <div>
+                                    <input type="checkbox" name="" id="ans1">
+                                    <label for="ans1">
+                                        User Answer
+                                    </label>
+                                </div>
+                            </div>
                             <div class="q-a">
                                 <p>question Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sapiente?</p>
                                 <p>answer Lorem ipsum dolor sit amet.</p>
@@ -234,27 +291,6 @@
             </div>
         </div>
     </section>
-    <script>
-        function addRow () {
-            document.querySelector('#content').insertAdjacentHTML(
-                'beforeend',
-                `<div class="row">
-                <input type="text" name="Ques" value="" id="box" class="something" placeholder="Type here"/>
-                <input type="button" value="" onclick="removeRow(this)">
-                </div>`      
-            )
-            var list = document.getElementsByClassName("something");
-            for (var i = 0; i < list.length; i++) {
-            list[i].setAttribute("name", "Ques" + i);
-            }
-            
-            document.getElementsByClassName("row").style.counterIncrement = "subsection";
-        }
-
-        function removeRow (input) {
-        input.parentNode.remove()
-        }
-    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init( );
