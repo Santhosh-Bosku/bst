@@ -108,18 +108,20 @@ header ul li#burger-menu #burger-menu-container label .row
 header ul li#logout a
 {
  
-    width: auto;
+    width: 14vw;
     height: 100%;
     display: flex;
+    justify-content: center;
     text-decoration: none;
     align-items: center;
+    background-color: #41d5a6;
+    margin: 0 !important;
 }
 
 header ul li#logout a img
 {
     transform: rotateZ(-180deg);
-    width: 6vw;
-    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(140.4deg) brightness(1.2);
+    width: 7vw;
 }
 
 #profile-icon

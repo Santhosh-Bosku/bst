@@ -123,6 +123,15 @@
     text-indent: 1vw;
 }
 
+#display-container #quiz .col:first-child ul li input[type="file"]
+{
+    width: auto !important;
+    height: 5vh !important;
+    text-indent: 1vw;
+    display: block;
+    margin: 3vh auto 0 auto;
+}
+
 #display-container #quiz .col:first-child input[type="submit"]
 {
     width: 10vw;
