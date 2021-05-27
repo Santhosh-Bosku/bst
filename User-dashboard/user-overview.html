@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-overview.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>User-Overview</title>
+</head>
+<body>
+    <input type="checkbox" id="in1">
+    <header>
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-profile.html" class="active">
+                        <img src="images/user.png" alt="profile" class="active">
+                        <p class="show" data-aos="fade-left" class="active">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-bible-study.html">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-prayer-request.html">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="user-add-post.html">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-progress.html">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-group.html">
+                        <img src="images/icons/group.svg" alt="">
+                        <p class="show">Group</p>
+                    </a>
+                </li>
+                <li class="mb-view">
+                    <a href="user-notification.html">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="add-question.html">
+                        <img src="images/icons/question.svg" alt="">
+                        <p class="show">Add Questions</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="mobile-nav" class="mb-view">
+                <ul>
+                    <li>
+                        <a href="user-index.html">
+                            <img src="images/icons/blog.svg" alt="profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-quiz.html">
+                            <img src="images/icons/puzzle-piece.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-add-post.html">
+                            <img src="images/icons/plus.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-bible-study.html">
+                            <img src="images/icons/bible.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-profile.html" class="active">
+                            <img src="images/user.png" alt="profile" class="active">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="profile-container">
+                <div class="row" id="profile-dashboard">
+                    <div class="col">
+                        <div class="img">
+                            <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row-sec">
+                            <h1>Michael Pasula</h1>
+                        </div>
+                        <div class="row-sec">
+                            <ul>
+                                <li><a href="user-overview.html" class="active-a">Overview</a></li>
+                                <li><a href="user-profile.html">Info</a></li>
+                                <li><a href="user-activity.html">Activity</a></li>
+                                <li><a href="user-timeline.html">Timeline</a></li>
+                                <li><a href="user-edit-profile.html">Edit Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-details">
+                    <div class="col">
+                        <div>
+                            <p>Overview <a href=""><img src="images/icons/edit.svg" alt=""></a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus exercitationem esse voluptatem deserunt quae tempora. Ad, distinctio dolorem! Vel veniam obcaecati qui sunt provident nam illum autem saepe earum. Impedit inventore temporibus tenetur tempora nemo. Totam modi ratione aperiam esse obcaecati voluptate at laborum! Optio qui commodi, eveniet, quos repellat dicta corrupti voluptas soluta suscipit placeat quibusdam. Odit delectus distinctio quos quas. Nemo enim autem unde fugit mollitia quia impedit, atque rem velit nisi perspiciatis quibusdam pariatur tempore eaque laudantium dicta iusto quod nesciunt suscipit! Placeat autem eius neque mollitia blanditiis, possimus illo unde laboriosam nobis tempora sint laborum repellendus ad esse modi. Laborum veniam quibusdam accusantium laboriosam cupiditate consequatur id explicabo aliquid error officiis aut molestiae fugiat excepturi, recusandae eligendi ipsum nostrum eveniet voluptatibus? Quia, omnis assumenda. Autem porro placeat natus officiis quasi dolores facere voluptatibus eligendi blanditiis soluta? Reprehenderit quo possimus ea mollitia illum, reiciendis deserunt quisquam illo officiis nulla distinctio porro quae, fugiat odit quia similique dignissimos! Corrupti voluptatem cum voluptas illo quia tempora iure possimus quis temporibus iusto quod ipsum facilis, unde eveniet enim exercitationem totam cumque quisquam iste nihil dolorem. Impedit ullam aspernatur eveniet eaque animi nemo commodi aut molestias numquam dignissimos architecto veniam minima pariatur consectetur, praesentium iste hic maxime tempore eligendi illo vitae dolore. Voluptas, pariatur vitae! Aspernatur, nulla! Sit beatae eaque ipsum doloremque mollitia corrupti doloribus accusamus repellat? Repellat totam facilis explicabo magni facere, saepe suscipit ullam nihil similique id sunt fuga, possimus sint impedit, asperiores officia ex numquam? Aspernatur, beatae consequatur dolorum modi ducimus dicta a tenetur quia quam facilis vero voluptates porro nisi et dignissimos suscipit molestias accusantium quaerat fuga voluptatem neque dolore mollitia impedit. Libero illo nemo quidem beatae, consequatur nesciunt at vitae officiis praesentium cupiditate. Veniam eveniet quaerat consequatur aut quibusdam, reprehenderit maxime blanditiis mollitia quia velit veritatis dolore ipsa hic odit minus minima est quo numquam non assumenda rerum. Quibusdam facere maxime sed similique optio error nostrum, quo laudantium placeat saepe rem. Consequatur doloremque quod sit. Aliquam in blanditiis autem eos harum nostrum dolorem. Doloremque provident omnis id asperiores adipisci aut magni cumque recusandae, consequuntur, tempora eveniet voluptates eaque! Repudiandae eius vero a similique tempora temporibus iste corporis minus minima fugiat, voluptate, iusto adipisci aliquid magnam veniam pariatur. Dolorem aperiam vero dolore iste! Vel ad laudantium magnam sequi animi odit harum autem ipsam beatae, cupiditate unde culpa quos reiciendis minus distinctio libero. Accusamus voluptates impedit ipsum fuga accusantium esse, harum est necessitatibus quod amet voluptas velit, minus aperiam alias error perferendis? Sint ab temporibus animi. Delectus, officia fugit. Modi expedita accusamus laborum quae possimus quis id dolor praesentium voluptates enim, ad eveniet, hic cumque molestias doloremque iure fuga adipisci optio quibusdam quasi velit provident veniam deserunt iste? Sapiente, officia natus fugit nobis nam rerum quasi consequuntur dolor vitae rem amet accusamus magni et omnis modi iure illum, pariatur nesciunt dolorum excepturi nostrum numquam ab facere voluptatem. Quibusdam nobis id eos fugit ipsa? Sunt, beatae et. Vitae veritatis aut consequuntur fuga cupiditate repellat repudiandae ipsam itaque iure. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus similique maiores fugiat! Provident eligendi delectus commodi unde, optio quasi. Tempora vitae ipsum laudantium tempore possimus reprehenderit repellendus ipsam. Facilis, molestias?</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="sec-row mb-none">
+                            <div class="notifi mb-none">
+                                <h1>Notification</h1>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="sec-row"></div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
+</body>
+</html>

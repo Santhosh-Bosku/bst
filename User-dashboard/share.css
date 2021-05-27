@@ -1,0 +1,363 @@
+#progress-container
+{
+    width: 100%;
+    height: auto;
+    padding: 5vh 0 5vh 4vw ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#progress-container .row
+{
+    width: 94%;
+    height: 82vh;
+    /* background-color: wite; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#progress-container .row .col:first-child
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    
+}
+
+#progress-container .row .col:last-child
+{
+    width: 78%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#progress-container .row .col:last-child form
+{
+    width: 100%;
+}
+
+#progress-container .row .col:first-child a
+{
+    display: block;
+    text-align: left;
+    padding: 1vh 0 1vh 2%;
+    margin:  0 !important;
+    width: 98%;
+    text-decoration: none;
+    margin-bottom: 1px;
+    color: black;
+    border: none;
+}
+
+#progress-container .row .col:first-child p.mb-none
+{
+    position: absolute;
+    bottom: 2vh;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5vh;
+    font-weight: 600;
+    color: #41d5a6;
+}
+
+#progress-container .row .col:first-child p span
+{
+    display: block;
+    font-size: 1.7vh;
+    font-weight: initial;
+    color: black;
+}
+
+#progress-container .row .col:first-child p span a
+{
+    background-color: initial;
+    padding: 0;
+    color: black;
+}
+
+/* #progress-container .row .col:last-child form
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+#progress-container .row .col:last-child input
+{
+    width: 30vw;
+    height: 5vh;
+    border: none;
+    background-color: #ccc;
+    text-align: center;
+    display: block;
+    margin: 0 auto 3vh auto;
+}
+
+#progress-container .row .col:last-child input[type="submit"]
+{
+    width: 10vw;
+    height: 5vh;
+    display: block;
+    background-color: #5fd3ae;
+    color: white;
+    font-size: 2vh;
+    margin: 3vh  auto 0 auto;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    border: none;
+}
+
+#progress-container .row .col:last-child input[type="submit"]:hover
+{
+    background-color: #41d5a6;
+}
+
+
+.active-a
+{
+    color: #41d5a6;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 80%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  #progress-container .row .col:first-child div 
+  {
+      width: 100%;
+      height: 5vh ;
+      background-color: #41d5a6;
+  
+  }
+  
+  #progress-container .row .col:first-child div label
+  {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+  }
+  
+  
+  #progress-container .row .col:first-child div label p
+  {
+      margin: 0 10px ;
+      text-align: center;
+      font-size: 2vh;
+      font-weight: 600;
+  }
+  
+  #progress-container .row .col:first-child div label img
+  {
+      width: 2vh;
+      transform: rotateZ(90deg);
+  }
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+
+
+    #progress-container
+    {
+        margin: 14vw 0 0 0;
+        padding: 0;
+    }
+
+    #progress-container .row
+    {
+        width: 100%;
+        height: 82vh;
+        background-color: white;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        overflow-y: hidden;
+    }
+
+    #progress-container .row .col:first-child
+    {
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #progress-container .row .col:first-child a
+    {
+        display: inline-block;
+        width: 100%;
+        font-size: 3vw;
+        padding: 0 1.1vw;
+        height: 10vw;
+        padding: 0 0 0 4vw !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: black;
+        height: 0;
+        visibility: hidden;
+    }
+
+    #progress-container .row .col:last-child
+    {
+        width: 100%;
+    }
+  
+    #progress-container .row .col:last-child input
+    {
+        width: 80% !important;
+        font-size: 4vw;
+        height: 10vw !important;
+        margin: 0 auto 6vw auto !important;
+    }
+
+    #progress-container .row .col:last-child input[type="submit"]
+    {
+        width: 40vw !important;
+        font-size: 4vw;
+        height: 10vw !important;
+        margin: 0 auto 6vw auto !important;
+    }
+
+    #progress-container .row .col:last-child textarea
+    {
+        width: 80% !important;
+        font-size: 4vw;
+        height: 50vw !important;
+    }
+
+    #progress-container .row .col:last-child p
+    {
+        width: 80% !important;
+        font-size: 6vw;
+    }
+
+        
+    .tooltip .tooltiptext {
+        
+        bottom: 120% !important;
+    
+    }
+
+    #progress-container .row .col:first-child
+    {
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(211, 211, 211);
+        transition: 0.3s ease-in-out;
+    }
+
+    #progress-container .row .col:first-child div 
+    {
+        width: 100%;
+        height: 10vw;
+        background-color: #41d5a6;
+
+    }
+
+    #progress-container .row .col:first-child div label
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #41d5a6;
+        color: white;
+    }
+
+    #progress-container .row .col:first-child div label p
+    {
+        margin: 0 10px ;
+        text-align: center;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+
+    #progress-container .row .col:first-child div label img
+    {
+        width: 2vh;
+        transform: rotateZ(90deg);
+        margin: 0 10px ;
+        transition: 0.3s ease-in-out;
+    }
+
+    #setting-menu:checked ~ .row .col a
+    {
+        visibility: visible;
+        height: 10vw;
+        transition: 0.3s ease-in-out;
+    }
+
+    #setting-menu:checked ~ .row .col:first-child
+    {
+        height: auto !important;
+        transition: 0.3s ease-in-out;
+    }
+
+    #setting-menu:checked ~ .row .col:first-child div label img
+    {
+       transform: rotateZ(-90deg);
+    }
+
+    .active-a
+    {
+        background-color: white;
+    }
+
+}

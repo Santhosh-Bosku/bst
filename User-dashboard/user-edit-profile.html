@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-edit-profile.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>User-Edit-Profile</title>
+</head>
+<body>
+    <input type="checkbox" id="in1">
+    <header>
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-overview.html" class="active">
+                        <img src="images/user.png" alt="profile" class="active">
+                        <p class="show" data-aos="fade-left" class="active">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-bible-study.html">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-prayer-request.html">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="user-add-post.html">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-progress.html">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-group.html">
+                        <img src="images/icons/group.svg" alt="">
+                        <p class="show">Group</p>
+                    </a>
+                </li>
+                <li class="mb-view">
+                    <a href="user-notification.html">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="add-question.html">
+                        <img src="images/icons/question.svg" alt="">
+                        <p class="show">Add Questions</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="mobile-nav" class="mb-view">
+                <ul>
+                    <li>
+                        <a href="user-index.html">
+                            <img src="images/icons/blog.svg" alt="profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-quiz.html">
+                            <img src="images/icons/puzzle-piece.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-add-post.html">
+                            <img src="images/icons/plus.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-bible-study.html">
+                            <img src="images/icons/bible.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-profile.html" class="active">
+                            <img src="images/user.png" alt="profile" class="active">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="profile-container">
+                <div class="row" id="profile-dashboard">
+                    <div class="col">
+                        <div class="img">
+                            <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="row-sec">
+                            <h1>Michael Pasula</h1>
+                        </div>
+                        <div class="row-sec">
+                            <ul>
+                                <li><a href="user-overview.html" >Overview</a></li>
+                                <li><a href="user-profile.html">Info</a></li>
+                                <li><a href="user-activity.html" >Activity</a></li>
+                                <li><a href="user-timeline.html">Timeline</a></li>
+                                <li><a href="user-edit-profile.html"  class="active-a">Edit Profile</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="profile-edit-profile">
+                   <div class="col">
+                      <div id="edit-profile">
+                            <form action="">
+                                <div class="sec-row">
+                                    <p>Edit profile</p>
+                                </div>
+                                <div class="sec-row">
+                                    <div class="sec-col">
+                                        <div class="img">
+                                            <label class="edit-profile-img" for="edit-profile-img">
+                                                <img src="images/edit.svg" alt="">
+                                            </label>
+                                            <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="profile-image">
+                                        </div>
+                                    </div>
+                                    <div class="sec-col">
+                                        <ul>
+                                            <li>
+                                                <label for="edit-profile-name">Full Name</label>
+                                                <input type="text" name="" id="edit-profile-name" placeholder="Santhosh Bosku">
+                                            </li>
+                                            <li>
+                                                <label for="edit-dob">Date of Birth</label>
+                                                <input type="date" name="" id="edit-dob" value="1998-10-18">
+                                            </li>
+                                            <li>
+                                                <label for="edit-profile-email">E-mail</label>
+                                                <input type="email" name="" id="edit-profile-email" placeholder="santhoshbablu1997@gmail.com">
+                                            </li>
+                                            <li>
+                                                <label for="edit-profile-number">Contact Number</label>
+                                                <input type="text" name="" id="edit-profile-number" placeholder="0123456789">
+                                            </li>
+                                            <li>
+                                                <label for="edit-profile-address">Address</label>
+                                                <input type="text" name="" id="edit-profile-address" placeholder="2-7-101, Jangaon">
+                                            </li>
+                                            <!-- <li>
+                                                <label for="edit-password">Password</label>
+                                                <input type="password" name="" id="edit-password">
+                                            </li>
+                                            <li>
+                                                <label for="edit-confrim-password">Confirm Password</label>
+                                                <input type="password" name="" id="edit-confrim-password">
+                                            </li> -->
+                                        </ul>
+                                        <input type="submit" value="save">
+                                    </div>
+                                </div>
+                            </form>
+                      </div>
+                   </div>
+                   <div class="col">
+                       <div class="sec-row mb-none">
+                        <div class="notifi mb-none">
+                            <h1>Notification</h1>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                       </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <input type="file" name="" id="edit-profile-img" class="none">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
+</body>
+</html>

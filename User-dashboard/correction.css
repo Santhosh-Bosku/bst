@@ -1,0 +1,208 @@
+#data-container
+{
+    width: 100%;
+    height: auto;
+    margin: 0 0 0 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#data-container .row-1
+{
+    width: 70%;
+    height: 92vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#data-container .row-1 form
+{
+    width: 100%;
+}
+
+
+#data-container .row-1 .col
+{
+    width: 100%;
+
+}
+
+
+#data-container .row-1 .details
+{
+    height: 6vh;
+    background-color: white;
+    margin: 0 !important;
+}
+
+#data-container .row-1 .details ul
+{
+    width: 100%;
+    height: 100%;
+    background-color: #41d5a6;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#data-container .row-1 .details ul li
+{
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3vw;
+}
+
+#data-container .row-1 ul li:first-child
+{
+    font-size: 0.9vw !important;
+    color: black;
+}
+
+#data-container .row-1 ul li:nth-child(2)
+{
+    font-weight: 600;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#data-container .row-1 ul li:nth-child(3)
+{
+    font-weight: 600;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+
+#data-container .row-1 ul li:nth-child(3) span
+{
+    font-size: 1vw;
+    margin: 0 2vw;
+}
+
+#data-container .row-1 ul li:nth-child(3) input
+{
+    width: 15vh;
+    height: 5vh;
+    background-color: white;
+    border: none;
+    color: #41d5a6;
+    font-size: 1vw;
+}
+
+#data-container .row-1 .details ul li a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+}
+
+
+#data-container .row-1 .details ul li a .img
+{
+    width: 2.5vw;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+#data-container .row-1 .details ul li a .img img
+{
+    /* max-width: 100%; */
+    max-height: 100%;
+}
+
+#data-container .row-1 .answers
+{
+    /* height: 6vh; */
+    padding: 5vh 0 0 0;
+    height: 81vh;
+    overflow-y: scroll;
+}
+
+#data-container .row-1 .answers .q-a
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#data-container .row-1 .answers .q-a p
+{
+    width: 80%;
+    padding: 2vh 0;
+}
+
+#data-container .row-1 .answers .q-a div
+{
+    width: 80%;
+    padding: 2vh 0;
+}
+
+#data-container .row-2
+{
+    width: 30%;
+    height: 92vh;
+    /* background-color: rgb(0, 255, 149); */
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#data-container .row-2 h1
+{
+    width: 100%;
+    height: 6vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#data-container .row-2 ul
+{
+    width: 100%;
+    overflow-y: scroll;
+    height: 86vh;
+}
+
+#data-container .row-2 ul li
+{
+    width: 100%;
+    height: 6vh;
+    list-style: none;
+    margin-bottom: 3px;
+}
+
+#data-container .row-2 ul li a
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    text-indent: 10px;
+    color: #41d5a6;
+}
+

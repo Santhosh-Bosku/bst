@@ -1,0 +1,138 @@
+
+
+#profile-details
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-image: none !important;
+    padding: 3% 0 3% 0;
+}
+
+#profile-details .col:first-child
+{
+    width: 65%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#profile-details .col:first-child div
+{
+    width: 90%;
+    height: 95%;
+    background-color: white;
+    box-shadow: 0 0 15px -5px black;
+}
+
+#profile-details .col:first-child div p:first-child
+{
+    color: #41d5a6;
+    font-size: 1.5vw;
+    margin: 5vh 0 10px 2vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#profile-details .col:first-child div p:last-child
+{
+    color: rgb(99, 99, 99);
+    font-size: 1vw;
+    text-indent: 5vw;
+    padding: 2vw;
+    text-align: justify;
+}
+
+#profile-details .col:first-child div p:first-child a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-details .col:first-child div p:first-child a img
+{
+    width: 3vh;
+    margin: 0 2vw;
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(140.4deg) brightness(1.2);
+}
+
+#profile-details .col:last-child
+{
+    width: 35%;
+    padding: 0 0 5vh 0;
+    /* height: auto; */
+    display: flex;
+    justify-content: flex-start !important;
+    align-self: flex-start !important;
+    /* flex-direction: column; */
+}
+
+#profile-details .col:last-child .sec-row
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    background-color: white;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+
+    #profile-details 
+    {
+        width: 100% !important;
+        height: auto;
+        padding: 5vh 0 !important;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-details .col:first-child
+    {
+        width: 90% !important;
+        margin: 0 !important;
+        padding: 0!important;
+
+    }
+
+    #profile-details .col:first-child div
+    {
+        width: 100%;
+        box-shadow: none;
+    }
+
+    #profile-details .col:last-child
+    {
+        width: 0;
+    }
+
+    #profile-details .col p:first-child
+    {
+        color: #41d5a6 !important;
+        font-size: 6vw !important;
+    }
+
+    #profile-details .col p:last-child
+    {
+        color: rgb(104, 104, 104) !important;
+        font-size: 3vw !important;
+        text-align: justify;
+        text-indent: 10%;
+        margin: 0 0 4vw 0 !important;
+        padding: 0 !important;
+    }
+    
+    
+#profile-details .col:first-child div p:first-child a img
+{
+    width: 4vw;
+    margin: 0 2vw;
+    filter: invert(0.4) sepia(1) saturate(20) hue-rotate(140.4deg) brightness(1.2);
+}

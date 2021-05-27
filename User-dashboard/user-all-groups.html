@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-all-group.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <title>Group</title>
+</head>
+<body>
+    <input type="checkbox" id="in1">
+    <header>    
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-profile.html">
+                        <img src="images/user.png" alt="profile">
+                        <p class="show" data-aos="fade-left">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-bible-study.html">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-prayer-request.html">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="user-add-post.html">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-progress.html">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show" >My Progress</p>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="user-group.html" class="active">
+                        <img src="images/icons/group.svg" alt="" class="active">
+                        <p class="show" class="active">Group</p>
+                    </a>
+                </li>
+                <li class="mb-view">
+                    <a href="user-notification.html">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="add-question.html">
+                        <img src="images/icons/question.svg" alt="">
+                        <p class="show">Add Questions</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="group-container">
+                <div class="row" class="group-mian">
+                    <div class="group">
+                        <div class="group-header">
+                            <h1 class="mb-view">JN01</h1>
+                            <ul>
+                                <li class="mb-none">
+                                    <h1>JN01</h1>
+                                </li>
+                                <li>
+                                    <a href="user-group.html">submitted</a>
+                                </li>
+                                <li>
+                                    <a href="user-group-members.html">Members</a>
+                                </li>
+                                <li>
+                                    <a href="user-group-activity.html">Activity</a>
+                                </li>
+                                <li>
+                                    <a href="user-all-groups.html"  class="active-a">Groups</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="group-body">
+                            <div>
+                                <div class="submitted">
+                                    <p>
+                                        <span>JN01</span>
+                                    </p>
+                                    <span>10/20</span>
+                                </div>
+                                <div class="submitted">
+                                    <p>
+                                        <span>JN02</span>
+                                    </p>
+                                    <span>15/30</span>
+                                </div>
+                                <div class="submitted">
+                                    <p>
+                                        <span>KZ01</span>
+                                    </p>
+                                    <span>30/30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row notifi mb-none">
+                    <h1>Group Statistics</h1>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="">JN01: <span>10/20</span></a>
+                            </li>
+                            <li>
+                                <a href="">JN02:<span>30/40</span></a>
+                            </li>
+                            <li>
+                                <a href="">KZ01:<span>10/30</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,503 @@
+#group-container
+{
+    width: 100%;
+    height: auto;
+    padding: 2vh 0 2vh 4vw ;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+#group-container .row:first-child
+{
+    width: 67%;
+    height: 88vh;
+    background-color: white;
+}
+
+#group-container .row:nth-child(2)
+{
+    width: 30%;
+    height: auto;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+
+.group
+{
+    width: 100%;
+    height: auto;
+}
+
+.group ul
+{
+    width: 100%;
+    height: 6vh;
+    list-style: none;
+    text-align: right;
+    background-color: #41d5a6;
+}
+
+.group ul li
+{
+    display: inline-block;
+    width: 6vw;
+    height: 100%;
+    margin: 0 2%;
+    margin: 0 auto;
+}
+
+.group ul li:first-child
+{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.group ul li a
+{
+    width: 100%;
+    height: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black !important;
+    font-weight: 600;
+    text-decoration: none;
+    border-color: black !important;
+}
+
+.group ul li a:hover
+{
+    border-bottom: 4px solid black;
+}
+
+.notifi div
+{
+    width: 100%;
+    height: 75vh;
+    text-align: center;
+    background-color: #ccc;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.notifi div::-webkit-scrollbar
+{
+    /* display: none; */
+    background-color: none;
+}
+
+.notifi div::-webkit-scrollbar-track 
+{
+    box-shadow: none !important;
+    background-color: transparent;
+}
+
+.notifi div::-webkit-scrollbar
+{
+    width: 3px !important;
+    background-color: transparent;
+}
+
+.notifi div::-webkit-scrollbar-thumb 
+{
+    background-color: black;
+}
+
+.notifi h1
+{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    background-color: #41d5a6;
+    color: white;
+}
+
+.notifi div ul
+{
+    width: 100%;
+    list-style: none;
+}
+
+.notifi div ul li
+{
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 1px;
+}
+
+.notifi div ul li a
+{
+    width: 96%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 0 0 4%;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+}
+
+.notifi div ul li a:hover
+{
+    background-color: rgb(218, 218, 218);
+}
+
+.notifi div ul li a span
+{
+    color: #41d5a6;
+    margin: 0 8px;
+}
+
+input[type="checkbox"]
+{
+    display: none;
+}
+
+.chapter-num
+{
+    width: 98%;
+    height: 0;
+    visibility: hidden;
+    /* opacity: 0; */
+    background-color: #ccc;
+    list-style: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 0 0 10px 0;
+    padding: 3% 1%;
+}
+
+.chapter-num span
+{
+    width: 6%;
+    height: 3vw;
+    background-color: white;
+    font-size: 1vw;
+    color: green;
+}
+
+.chapter-num span a
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#chapter:checked ~ .chapter-num
+{
+    height: auto;
+    visibility: visible;
+    transition: visibility 0.3s ease-in-out;
+    display: flex;
+}
+
+.incomplete
+{
+    /* background-color: red !important; */
+    color: red !important;
+}
+
+.group-body .row
+{
+    width: 100% !important;
+    height: auto !important;
+}
+
+.group-body 
+{
+    margin: 5px 0 0 0 ;
+}
+
+.group-body .submitted
+{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+    background-color: #e2e2e2;
+}
+
+.group-body .submitted a
+{
+    width: 20% !important;
+    all: initial;
+    color: red;
+    font-size: 2vh;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.group-body .submitted p{
+    display: inline-block;
+    font-size: 2vh;
+    color: #000000;
+    width: 80%;
+}
+
+.group-body .submitted p span{
+    color: #41d5a6;
+    margin: 0 4vw;
+}
+
+.group-body .submitted p span:first-child
+{
+    font-weight: 600;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #progress-container
+    {
+        margin: 14vw 0 0 0;
+        padding: 0;
+    }
+
+    #progress-container .row:first-child
+    {
+        width: 100%;
+        height: 84.3vh !important;
+    }
+
+    #progress-container .row .col#group
+    {
+        width: 95%;
+        margin: 4vh auto;
+        box-shadow:  0 0 10px -2px black ;
+        background-color: white;
+        border-radius: 5px;
+        padding:0 0 10px 0;
+        /* overflow: hidden; */
+    }
+
+    #progress-container .row .col#group h1
+    {
+        width: 96%;
+        /* height: 8vw; */
+        color: white;
+        padding: 1vw 0 1vw 4%;
+        font-size: 6vw;
+        font-weight: 400;
+        background-color: #41d5a6;
+        border-radius: 5px;
+    }
+    #progress-container .row .col#group p
+    {
+        width: 100%;
+        margin: 4vw 0;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    #progress-container .row .col#group p span
+    {
+        background-color: #ccc;
+        padding: 5px;
+        color: #41d5a6;
+    }
+
+    #progress-container .row .col#group a
+    {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-decoration: none;
+        text-align: center;
+        font-size: 4vw;
+        color: #41d5a6;
+    }
+
+    #progress-container .row .col#bible-study
+    {
+        width: 95%;
+        margin: 4vh auto;
+        box-shadow:  0 0 10px -2px black ;
+        background-color: white;
+        border-radius: 5px;
+        padding:0 0 10px 0;
+        /* overflow: hidden; */
+    }
+
+    #progress-container .row .col#bible-study h1
+    {
+        width: 96%;
+        /* height: 8vw; */
+        color: white;
+        padding: 1vw 0 1vw 4%;
+        font-size: 6vw;
+        font-weight: 400;
+        background-color: #41d5a6;
+        border-radius: 5px;
+    }
+
+    #progress-container .row .col#bible-study label
+    {
+        display: block;
+        width: 96% !important;
+        background-color: rgba(0, 0, 0, 0.726);
+        margin: 10px 0 0 0 ;
+        padding: 10px 0 10px 4%;
+        color: white;
+    }
+
+    .chapter-num span
+    {
+        width: 8%;
+        height: 8vw;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 4vw;
+        color: green;
+    }
+
+    #group-container
+    {
+        width: 100%;
+        padding: 0 !important;
+    }
+
+    #group-container .row:first-child
+    {
+        width: 100%;
+        height: 92vh;
+        margin: 0 !important;
+        padding: 0 !important;
+        background-color: white;
+    }
+
+    .group
+    {
+        /* background-color: #41d5a6; */
+    }
+
+    .group ul
+    {
+        width: 100%;
+        height: 6vh;
+        list-style: none;
+        text-align: right;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .group ul li
+    {
+        display: inline-block;
+        width: 25%;
+        height: 100%;
+        margin: 0 !important;
+    }
+
+    .group ul li h1
+    {
+        float: left;
+    }
+
+    .group h1
+    {
+        color: white;
+        font-size: 7vw;
+        width: 100%;
+        padding: 5px 0 !important;
+        background-color: #8a8a8a;
+        text-align: center;
+        display: block;
+    }
+
+    .group ul li:first-child
+    {
+        /* float: left; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .group ul li a
+    {
+        width: 100%;
+        height: 92%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #41d5a6 !important;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: 3vw;
+        border-color: #41d5a6 !important;
+    }
+
+    .group-body div a
+    {
+        font-size: 2vw;
+    }
+
+    .group-body 
+    {
+        margin: 5px 0 0 0 ;
+    }
+
+    .group-body .submitted
+    {
+        width: 100%;
+        height: 10vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2px;
+        background-color: #e2e2e2;
+    }
+
+    .group-body .submitted a
+    {
+        width: 20% !important;
+        all: initial;
+        color: red;
+        font-size: 3vw;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+        /* padding: 0 4vw; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .group-body .submitted p{
+        display: inline-block;
+        font-size: 3vw;
+        color: #000000;
+        width: 80%;
+    }
+
+    .group-body .submitted p span{
+        color: #41d5a6;
+        margin: 0 4vw;
+    }
+
+    .group-body .submitted p span:first-child
+    {
+        font-weight: 600;
+    }
+
+}

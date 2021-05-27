@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-single-post.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>User-comment</title>
+</head>
+<body>
+    <input type="checkbox" id="in1">
+    <header>
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-profile.html">
+                        <img src="images/user.png" alt="profile">
+                        <p class="show">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html" class="active">
+                        <img src="images/icons/blog.svg" alt="profile" class="active">
+                        <p class="show" class="active">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="user-bible-study.html">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-prayer-request.html">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="user-add-post.html">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-progress.html">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-group.html">
+                        <img src="images/icons/group.svg" alt="">
+                        <p class="show">Group</p>
+                    </a>
+                </li>
+                <li class="mb-view">
+                    <a href="user-notification.html">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="settings.html">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="add-question.html">
+                        <img src="images/icons/question.svg" alt="">
+                        <p class="show">Add Questions</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="mobile-nav" class="mb-view">
+                <ul>
+                    <li>
+                        <a href="user-index.html"  class="active">
+                            <img src="images/icons/blog.svg" alt="profile"  class="active">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-quiz.html">
+                            <img src="images/icons/puzzle-piece.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-add-post.html">
+                            <img src="images/icons/plus.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-bible-study.html">
+                            <img src="images/icons/bible.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-profile.html">
+                            <img src="images/user.png" alt="profile">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="profile-container">
+                
+                <div id="profile-timeline">
+                   <div class="col">
+                      <div id="timeline">
+                            <div class="post">
+                                <div class="post-header">
+                                    <ul>
+                                        <li>
+                                            <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">                                            
+                                        </li>
+                                        <li>
+                                            <a href=""> <p>Demo@123</p></a>
+                                            <p>Posted on <span id="date">jun2-24-2301</span></p>        
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="post-body">
+                                    <a href=""><h1>Heading of the post</h1></a>
+                                    <img src="images/pexels-mike-126271.jpg" alt="post-image">
+                                    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, nemo unde eum sed quos voluptas et nihil non optio voluptatibus velit possimus neque qui ea veniam? Exercitationem iure quidem molestias!</p>            
+                                </div>
+                                <div class="post-footer">
+                                    <ul>
+                                        <li id="comment">
+                                            <a href="#add-comment">
+                                                <img src="images/chat.svg" alt="comment">
+                                            </a>
+                                        </li>
+                                        <li id="share">
+                                            <a href="">
+                                                <img src="images/share.svg" alt="sah">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="comment-display">
+                                <div class="comments">
+                                    <div class="comment-head">
+                                        <ul>
+                                            <li class="img">
+                                                <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Demo@12345</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, hic.</p>
+                                    </div>
+                                </div>
+                                <div class="comments">
+                                    <div class="comment-head">
+                                        <ul>
+                                            <li class="img">
+                                                <img src="images/pexels-ali-yasser-arwand-693521.jpg" alt="">
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <p>Demo@12345</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="comment-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, hic Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ad itaque repellendus facilis! Minima laboriosam eligendi ullam incidunt repellat? Odio voluptates porro temporibus quo beatae! Totam unde dolore placeat esse.</p>
+                                    </div>
+                                </div>
+                                <div id="add-comment">
+                                    <h1>
+                                        Comment Here
+                                    </h1>
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                    <input type="submit" value="Comment">
+                                </div>
+                            </div>
+                      </div>
+                   </div>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
+</body>
+</html>

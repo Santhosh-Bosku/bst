@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-bible-study.css">
+    <script src="demo.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">    
+    <title>User-Bible-study</title>
+</head>
+<body class="nottranslate">
+    <input type="checkbox" id="in1">
+    <header>
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-overview.html">
+                        <img src="images/user.png" alt="profile" >
+                        <p class="show" data-aos="fade-left" >Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-bible-study.html" class="active">
+                        <img src="images/icons/bible.svg" alt="" class="active">
+                        <p class="show" class="active">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-prayer-request.html">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="user-add-post.html">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-progress.html">
+                        <img src="images/graphic-progression.svg" alt="">
+                        <p class="show">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-group.html">
+                        <img src="images/icons/group.svg" alt="">
+                        <p class="show">Group</p>
+                    </a>
+                </li>
+                <li class="mb-view">
+                    <a href="user-notification.html">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li  class="mb-none">
+                    <a href="add-question.html">
+                        <img src="images/icons/question.svg" alt="">
+                        <p class="show">Add Questions</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="mobile-nav" class="mb-view">
+                <ul>
+                    <li>
+                        <a href="user-index.html">
+                            <img src="images/icons/blog.svg" alt="profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-quiz.html">
+                            <img src="images/icons/puzzle-piece.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-add-post.html">
+                            <img src="images/icons/plus.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-bible-study.html" class="">
+                            <img src="images/icons/bible.svg" alt="" class="active">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-profile.html">
+                            <img src="images/user.png" alt="profile">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="display-container" >
+                <div id="quiz" >
+                    <div class="col">
+                            <div id="questions" class="translate">
+                                <div><h1>Bible Study</h1></div>
+                                <div class="row">
+                                    <form action="">
+                                        <input list="book-names" name="" id="select1" placeholder="Select book" onchange="chapterNumber()" autocomplete="off">
+                                        <datalist id="book-names"> 
+                                            <option value="santhosh"></option>
+                                            <option value="prudhvi"></option>
+                                            <option value="prudhvi1"></option>
+                                            <option value="prudhvi2"></option>
+                                            <option value="prudhvi3"></option>
+                                            <option value="prudhvi4"></option>
+                                            <option value="prudhvi5"></option>
+                                            <option value="prudhvi6"></option>
+                                            <option value="prudhvi7"></option>
+                                        </datalist>
+                                        <input list="" type="text" id="select2" placeholder="Select Chapter Number">
+                                        <datalist id="santhosh">
+                                            <option value="1"></option>
+                                            <option value="2"></option>
+                                            <option value="3"></option>
+                                        </datalist>
+                                        <datalist id="prudhvi"> 
+                                            <option value="1"></option>
+                                            <option value="2"></option>
+                                            <option value="3"></option>
+                                            <option value="4"></option>
+                                        </datalist>
+                                        <input type="submit" value="Open">
+                                    </form>
+                                </div>
+                                <div class="row">
+                                    <form action="">
+                                        <ul>
+                                            <li>
+                                                <h1>Questions on <span>chapter 1</span></h1>
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, maiores.</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, reiciendis!</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name?</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                            <li>
+                                                <label for="question">what is your name? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sit!</label>
+                                                <!-- <input type="text"> -->
+                                            </li>
+                                        </ul>
+                                        <input type="submit" value="Submit">
+                                    </form>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <input type="file" name="" id="edit-profile-img" class="none">
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+        </script>
+        
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script>
+</body>
+</html>

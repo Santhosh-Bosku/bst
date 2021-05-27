@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="user-progress.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <title>User-progress</title>
+</head>
+<body>
+    <input type="checkbox" id="in1">
+    <header>
+        <ul>
+            <li class="" id="burger-menu">
+                <div id="burger-menu-container">
+                    <label for="in1">
+                        <div class="row"></div>
+                        <div class="row"></div>
+                        <div class="row"></div>
+                    </label>
+                </div>
+            </li>
+            <li id="logo">
+                <h1>Logo</h1> 
+            </li>
+            <li id="logout" class="mb-view">
+                <a href="">
+                    <img src="images/logout.svg" alt="logout">
+                </a>
+            </li>
+            <li id="profile-icon" class="mb-none">
+                <a href="">
+                    <p>Demo@123456789123456789</p>
+                    <img src="images/user.svg" alt="user">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <section id="body-container">
+        <div id="menu">
+            <ul>
+                <li>
+                    <a href="user-profile.html">
+                        <img src="images/user.png" alt="profile">
+                        <p class="show" data-aos="fade-left">Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-index.html">
+                        <img src="images/icons/blog.svg" alt="profile">
+                        <p class="show">Timeline</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-quiz.html">
+                        <img src="images/icons/puzzle-piece.svg" alt="">
+                        <p class="show">Quiz</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-bible-study.html">
+                        <img src="images/icons/bible.svg" alt="">
+                        <p class="show">Bible Study</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-prayer-request.html">
+                        <img src="images/icons/prayer.svg" alt="">
+                        <p class="show">Prayer Request</p>
+                    </a>
+                </li>  
+                <li>
+                    <a href="user-add-post.html">
+                        <img src="images/icons/plus.svg" alt="">
+                        <p class="show">Add Post</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-progress.html" class="active">
+                        <img src="images/graphic-progression.svg" alt=""  class="active">
+                        <p class="show"  class="active">My Progress</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="user-group.html">
+                        <img src="images/icons/group.svg" alt="">
+                        <p class="show">Group</p>
+                    </a>
+                </li>
+                <li class="mb-view">
+                    <a href="user-notification.html">
+                        <img src="images//icons/megaphone.svg" alt="">
+                        <p class="show">Notification</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <img src="images/icons/settings.svg" alt="">
+                        <p class="show">Settings</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="add-question.html">
+                        <img src="images/icons/question.svg" alt="">
+                        <p class="show">Add Questions</p>
+                    </a>
+                </li>
+                <li class="mb-none">
+                    <a href="" >
+                        <img src="images/logout.svg" alt="">
+                        <p class="show">Logout</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="mobile-nav" class="mb-view">
+                <ul>
+                    <li>
+                        <a href="user-index.html">
+                            <img src="images/icons/blog.svg" alt="profile">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-quiz.html">
+                            <img src="images/icons/puzzle-piece.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-add-post.html">
+                            <img src="images/icons/plus.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-bible-study.html">
+                            <img src="images/icons/bible.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user-profile.html">
+                            <img src="images/user.png" alt="profile">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="progress-container">
+                <div class="row" class="progress-mian">
+                    <div class="col" id="group">
+                        <h1>Group</h1>
+                        <p>Quiz's completed <span>10/20</span></p>
+                        <a href="">View Missed Quiz's</a>
+                    </div>
+                    <div class="col" id="bible-study">
+                        <div class="book">
+                            <h1>Bible Study</h1>
+                            <input type="checkbox" name="" id="chapter" onclick="reply_click(this.id)">
+                            <label for="chapter">Book Name</label>
+                            <div class="chapter-num">
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                                <span>
+                                    <a href="">1</a>
+                                </span>
+                                <span>
+                                    <a href="" class="incomplete">2</a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="book">
+                            <input type="checkbox" name="" id="chapter2" onclick="reply_click(this.id)">
+                            <label for="chapter2">Book Name 2</label>                   
+                            <div class="chapter-num get">
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>10</span>
+                                <span>1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span class="incomplete">5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                                <span>9</span>
+                                <span>9</span>
+                                <span>10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row notifi mb-none">
+                    <h1>Notification</h1>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                            <li>
+                                <a href="">Results of <span>1<sup>st</sup> </span>week <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Meeting on 21-22-2021 on book <span>james</span></a>
+                            </li>
+                            <li>
+                                <a href="">Missed Quiz on<span>21-08-2024</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init( );
+        AOS.init({
+        });
+    </script> -->
+</body>
+</html>

@@ -1,0 +1,266 @@
+
+#profile-edit-profile
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-image: none !important;
+    padding: 2% 0 0 0;
+}
+
+#profile-edit-profile .col:first-child
+{
+    width: 70%;
+}
+
+#profile-edit-profile .col:last-child
+{
+    width: 0%;
+    display: none;
+}
+
+#edit-profile
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /* background-color: red; */
+}
+
+#edit-profile form
+{
+    width: 90%;
+    box-shadow: 0 0 15px -5px black;
+    margin: 0 auto;
+}
+
+#edit-profile .sec-row:first-child p
+{
+    display: inline-block;
+    color: #41d5a6;
+    font-size: 1.5vw;
+    margin: 0 0 5vh 0;
+    text-align: center;
+    text-shadow: 0 0 10px white;
+    /* background-color: #41d5a6   ; */
+}
+
+#edit-profile .sec-row
+{
+    width: 100%;
+    /* height: 60vh; */
+    margin:0 auto 0 auto;
+    padding: 5vh 0 0 0;
+    background-color: white;
+}
+
+#edit-profile .sec-row .sec-col:first-child
+{
+    width: 100%;
+    height: auto;
+    display: none !important;
+}
+
+#edit-profile .sec-row .sec-col:first-child .img
+{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin: 0 auto;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#edit-profile .sec-row .sec-col:first-child .img .edit-profile-img
+{
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0;
+    right: 18px;
+    background-color: #41d5a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#edit-profile .sec-row .sec-col:first-child .img .edit-profile-img img
+{
+    width: 1vw;
+    height: 2vw;
+}
+
+#edit-profile .sec-row .sec-col:first-child .img img
+{
+    width: 100%;
+    border-radius: 50%;
+}   
+
+#edit-profile .sec-row .sec-col:nth-child(2)
+{
+    width: 100%;
+    text-align: center;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul
+{
+    width: 100%;
+    list-style: none;
+    text-align: initial;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul li
+{
+    width: 50%;
+    margin: 3vh auto 0 auto;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul li label
+{
+    display: block;
+    font-size: 1vw;
+    margin: 1vh 0;
+    color: #41d5a6;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul li input, textarea
+{
+    width: 100%;
+    height: 5vh;
+    font-size: 1vw;
+    text-indent: 1vw;
+    color: black;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul li textarea
+{
+    width: 96%;
+    height: 20vh;
+    resize: none;
+    padding: 2%;
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) ul li input::placeholder
+{
+    color: rgb(100, 100, 100);
+}
+
+#edit-profile .sec-row .sec-col:nth-child(2) input[type="submit"]
+{
+    display: inline-block;
+    margin: 5vh 0 !important;
+    width: 5vw;
+    height: 5vh;
+    font-size: 1vw;
+    background-color: #51bb99;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+
+}
+
+#edit-profile .sec-row input[type="submit"]:hover
+{
+    background-color: #41d5a6;
+    transition: all 0.1s ease-in-out;
+}
+
+#profile-edit-profile .col:last-child .sec-row
+{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    #profile-edit-profile
+    {
+        width: 100% !important;
+        height: auto;
+        padding: 0 !important;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #profile-edit-profile .col:first-child
+    {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+    }
+
+    #profile-edit-profile .col:last-child
+    {
+        width: 0;
+    }
+
+    #edit-profile
+    {
+        width: 100% !important;
+        margin-top: 8vh;
+    }
+
+    #edit-profile .sec-row:first-child p
+    {
+        font-size: 6vw;
+        margin: 0 !important;
+    }
+
+    #edit-profile form
+    {
+        width: 100% !important;
+    }
+
+    #edit-profile .sec-row:last-child
+    {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    #edit-profile .sec-row .sec-col:nth-child(2) ul li
+    {
+        width: 90% !important;
+        margin: 3vh auto 0 auto;
+    }
+
+    #edit-profile .sec-row .sec-col:nth-child(2) ul li label
+    {
+        font-size: 4vw;
+    }
+
+    #edit-profile .sec-row .sec-col:nth-child(2) ul li input
+    {
+        width: 100%;
+        height: 10vw;
+        font-size: 4vw;
+    }
+
+    #edit-profile .sec-row .sec-col:nth-child(2) ul li textarea
+    {
+        width: 96%;
+        height: 47vw;
+        font-size: 4vw;
+    }
+
+    #edit-profile .sec-row .sec-col:nth-child(2) input[type="submit"]
+    {
+        width: 30vw;
+        font-size: 4vw;
+        height: 10vw;
+    }
+}

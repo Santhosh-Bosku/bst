@@ -1,0 +1,413 @@
+
+#display-container
+{
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+}
+
+#display-container #quiz-menu
+{
+    display: block;
+    width: 100%;
+    height: 6vh;
+    background-color: #41d5a6;
+}
+
+#display-container #quiz-menu ul
+{
+    width: 50%;
+    height: 100%;
+    /* margin: 0 auto; */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+#display-container #quiz-menu ul li
+{
+    width: 10vw;
+}
+
+#display-container #quiz-menu ul li a
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(216, 216, 216);
+    font-weight: 600;
+    transition: color 0.1s ease-in;
+}
+
+#display-container #quiz-menu ul li a:hover
+{
+    color: white;
+    /* border-bottom: 4px solid #41d5a6; */
+    transition: color 0.1s ease-in;
+}
+
+.active-a
+{
+    color: white !important;
+    border-color: white;
+}
+
+#display-container #quiz
+{
+    width: 100%;
+    /* height: 60vh; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 5vh 0;
+}
+
+#display-container #quiz .col:first-child
+{
+    width: 60%;
+    /* height: 50vh; */
+    background-color: white;
+    box-shadow: 0 0 15px -5px black;
+    text-align: center;
+}
+
+#display-container #quiz .col:first-child h1 
+{
+    color: #41d5a6;
+    text-align: center;
+    margin: 5vh 0;
+}
+
+#display-container #quiz .col:first-child h1 span
+{
+    /* color: black; */
+    text-decoration: underline;
+}
+
+#display-container #quiz .col:first-child ul
+{
+    width: 80%;
+    margin: 0 auto;
+    list-style: none;
+    text-align: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#display-container #quiz .col:first-child .row:first-child
+{
+    width: 100%;
+    margin: 0 auto 10px auto;
+    gap: 3vw !important;
+}
+
+#questions .row form
+{
+    width: 100%;
+}
+#questions .row input
+{
+    margin: 0 3vw 0 0 ;
+}
+
+#questions .row input:first-child
+{
+    width: 15vw;
+    height: 5vh;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    color: black;
+    outline: none;
+    text-indent: 10px;
+}
+#questions .row #select2
+{
+    width: 15vw;
+    height: 5vh;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    color: black;
+    outline: none;
+    text-indent: 10px;
+}
+#questions .row input[type="date"]
+{
+    width: 15vw;
+    height: 5vh;
+    background-color: rgb(231, 231, 231);
+    border: none;
+    color: black;
+    outline: none;
+    text-indent: 10px;
+}
+
+#questions .row ul
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 5vh !important;
+}
+
+#questions .row ul li
+{
+    width: 50%;
+}
+
+#display-container #quiz .col:first-child #questions .row ul li label
+{
+    display: block;
+    padding: 2.5vh 0 !important;
+    color: black;
+    font-weight: 600;
+    font-size: 1vw;
+    text-align: initial;
+    /* background-color: red    ; */
+}
+
+#display-container #quiz .col:first-child #questions .row ul li input
+{
+    width: 100%;
+    height: 5vh;
+    text-indent: 1vw;
+}
+
+#display-container #quiz .col:first-child input[type="submit"]
+{
+    width: 10vw;
+    height: 5vh;
+    text-align: center;
+    margin: 5vh 0;
+    font-size: 1vw;
+    color: white;
+    background-color: #41d5a6d0;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#display-container #quiz .col:first-child input[type="submit"]:hover
+{
+    background-color: #41d5a6;
+    transition: 0.3s ease-in-out;
+}
+
+#display-container #quiz .col:last-child
+{
+    width: 90%;
+    /* height: 50vh; */
+    /* background-color: white; */
+}
+
+#pervious
+{
+    width: 100%;
+    margin: 0 0 5vh 0 ;
+    box-shadow: 0 0 15px -5px black;
+    background-color: white;
+}
+
+
+/*********************************************************** Responsive Design **********************************************************/
+
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+    
+    #display-container #quiz
+    {
+        width: 100% !important;
+        /* height: 60vh; */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding:0 !important;
+    }
+    
+    #display-container #quiz .col:first-child
+    {
+        width: 100% !important;
+        /* height: 50vh; */
+        background-color: white;
+        box-shadow: 0 0 15px -5px black;
+        text-align: center;
+    }
+    
+    #display-container #quiz .col:first-child h1 
+    {
+        color: #41d5a6;
+        text-align: center;
+        margin: 5vh 0;
+    }
+    
+    #display-container #quiz .col:first-child h1 span
+    {
+        /* color: black; */
+        text-decoration: underline;
+    }
+    
+    #display-container #quiz .col:first-child ul
+    {
+        width: 100%;
+        margin: 0 auto;
+        list-style: none;
+        text-align: initial;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #display-container #quiz .col:first-child .row:first-child
+    {
+        width: 100%;
+        margin: 0 auto 10px auto;
+        gap: 3vw !important;
+    }
+
+    #questions .row input:first-child
+    {
+        height: 10vw;
+    }
+    
+    #questions .row form
+    {
+        width: 100%;
+    }
+    #questions .row input,span
+    {
+        margin: 0 3vw 0 0 ;
+    }
+    
+    #questions div:nth-child(2) input
+    {
+        width: 90% !important;
+        height: 10vw;
+        background-color: rgb(231, 231, 231);
+        border: none;
+        color: black;
+        outline: none;
+        margin-bottom: 5vw;
+        text-indent: 10px;
+        margin: 0 0 5vw 0 !important;
+    }
+    #questions .row #select2
+    {
+        width: 15vw;
+        height: 10vw;
+        background-color: rgb(231, 231, 231);
+        border: none;
+        color: black;
+        outline: none;
+        text-indent: 10px;
+    }
+    
+    #questions .row ul
+    {
+        width: 100%;
+        display: block;
+        margin-bottom: 5vh !important;
+    }
+    
+    #questions .row ul li
+    {
+        width: 50%;
+    }
+    
+    #display-container #quiz .col:first-child #questions .row ul li label
+    {
+        display: block;
+        padding: 2.5vh 0 !important;
+        color: black;
+        font-weight: 600;
+        font-size: 1vw;
+        text-align: initial;
+        /* background-color: red    ; */
+    }
+    
+    #display-container #quiz .col:first-child #questions .row ul li input
+    {
+        width: 100%;
+        height: 10vw;
+        text-indent: 1vw;
+    }
+    
+    #display-container #quiz .col:first-child input[type="submit"]
+    {
+        width: 90%;
+        height: 9vw;
+        text-align: center;
+        margin:0 0 5vh 0;
+        font-size: 4vw;
+        color: white;
+        background-color: #41d5a6d0;
+        border: none;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        text-indent: initial;
+    }
+    
+    #display-container #quiz .col:first-child input[type="submit"]:hover
+    {
+        background-color: #41d5a6;
+        transition: 0.3s ease-in-out;
+    }
+    
+    #display-container #quiz .col:last-child
+    {
+        width: 90%;
+        /* height: 50vh; */
+        /* background-color: white; */
+    }
+    
+    #pervious
+    {
+        width: 100%;
+        margin: 0 0 5vh 0 ;
+        box-shadow: 0 0 15px -5px black;
+        background-color: white;
+    }
+
+    #questions div:last-child form
+    {
+        width: 100% !important;
+    }
+
+    #questions div:last-child form ul
+    {
+        width: 100% !important;
+    }
+
+    #questions div:last-child form ul li
+    {
+        width: 90% !important;
+    }
+
+    #questions div:last-child form ul li label
+    {
+        font-size: 4vw !important;
+    }
+
+    #questions div:last-child form ul li input
+    {
+        height: 10vw !important;
+    }
+
+    #questions div:last-child form ul li h1
+    {
+        font-size: 6vw;
+    }
+    
+    #questions div:last-child input[type="submit"]
+    {
+        width: 30vw !important;
+        font-size: 4vw;
+    }
+}
