@@ -11,6 +11,11 @@
 
 }
 
+header a
+{
+    color: black !important;
+}
+
 #container
 {
     background-color: white;
