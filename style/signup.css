@@ -1,0 +1,242 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+}
+
+header h1, a
+{
+    color: black;
+}
+
+#container
+{
+    background-color: #f1ad5b;
+}
+
+#login-form
+{
+    width: 100%;
+    height: 92vh;
+    margin-top: 8vh;
+    background-image: url("/src/images/signup-background.jpg");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* overflow-y: scroll; */
+}
+
+#login-form div
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+#login-form div h1
+{
+    font-size: 2vw;
+    /* color: #ccc; */
+}
+
+#login-form div form
+{
+    text-align: center;
+}
+
+#login-form div form input
+{
+    display: block;
+    height: 5vh;
+    width: 20vw;
+    margin: 3vh 0;
+    font-size: 1vw;
+    outline: none;
+    text-indent: 1vw;
+}
+
+#login-form div form input::placeholder
+{
+    font-size: 1vw;
+    text-indent: 1vw;
+}
+
+#login-form div form button
+{
+    width: 20vw;
+    height: 5vh;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1vw;
+}
+
+#login-form div h3
+{
+    font-size: 1vw;
+    margin: 1vw 0;
+    color: WHITE;
+}
+
+#login-form div ul
+{
+    max-width: 20vw;
+    height: 5vh;
+    list-style: none;
+    display: flex;
+}
+
+#login-form div ul li
+{
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form div ul li a
+{
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form div ul li:nth-child(1)
+{
+    background-color: blue;
+    color: white;
+}
+#login-form div ul li:nth-child(2)
+{
+    width: 5vw;
+    color: white;
+}
+#login-form div ul li:last-child
+{
+    background-color: rgb(189, 80, 17);
+    color: white;
+}
+
+@media only screen and (min-width: 170px) and (max-width: 770px)
+{
+
+    #login-form
+    {
+        background-image: none;
+        background-color: white;
+    }
+
+    #login-form div
+    {
+        width: 100%;
+    }
+    #login-form div h1
+    {
+        font-size: 3vh;
+        color: black;
+    }
+
+    #login-form div form
+    {
+        text-align: center;
+    }
+
+    #login-form div form input
+    {
+        display: block;
+        height: 10vw;
+        width: 80vw;
+        margin: 5vh 0;
+        font-size: 2vh;
+        outline: none;
+        text-indent: 1vh;
+    }
+
+    #login-form div form input::placeholder
+    {
+        font-size: 2vh;
+        text-indent: 1vh;
+    }
+
+    #login-form div form button
+    {
+        width: 80vw;
+        height: 6vh;
+        background-color: black;
+        color: white;
+        border: none;
+        font-size: 2vh;
+    }
+
+    #login-form div form a
+    {
+        display: inline-block;
+        margin: 5vh 0 0 0;
+    }
+
+    #login-form div h3
+    {
+        font-size: 3vw;
+        margin: 5vw 0;
+        color: rgb(0, 0, 0);
+    }
+
+    #login-form div ul
+    {
+        max-width: 80vw;
+        height: 5vh;
+        list-style: none;
+        display: flex;
+    }
+
+    #login-form div ul li
+    {
+        width: 40vw;
+        height: 10vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #login-form div ul li a
+    {
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: white !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #login-form div ul li:nth-child(1)
+    {
+        background-color: blue;
+        color: white;
+    }
+    #login-form div ul li:nth-child(2)
+    {
+        width: 5vw;
+        color: white;
+    }
+    #login-form div ul li:last-child
+    {
+        background-color: rgb(189, 80, 17);
+        color: white;
+    }
+
+}
